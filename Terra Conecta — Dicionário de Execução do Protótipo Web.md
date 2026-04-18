@@ -26,33 +26,33 @@
 
 # 📚 Sumário Executivo
 
-1. Objetivo do Dicionário de Execução  
-2. Princípios de Execução  
-3. Ambiente Base de Trabalho no VS Code  
-4. Stack e Bibliotecas com Finalidade Técnica  
-5. Estratégia de Versionamento  
-6. Tree View das Branches  
-7. Sequência Macro de Execução em 15 Dias  
-8. Fase 0 — Preparação do Ambiente  
-9. Fase 1 — Fundação do Repositório  
-10. Fase 2 — Fundação Visual do Frontend  
-11. Fase 3 — Autenticação e Shell do Sistema  
-12. Fase 4 — Dashboard Inicial  
-13. Fase 5 — Gestão de Usuárias  
-14. Fase 6 — Solicitações Operacionais  
-15. Fase 7 — Histórico, Mídias e Conteúdo  
-16. Fase 8 — Backend Mínimo Funcional  
-17. Fase 9 — Integração Frontend + Backend  
-18. Fase 10 — Refino, QA e Demo  
-19. Dicionário de Pastas e Arquivos  
-20. Matriz de Banco de Dados  
-21. Modelagem de Relacionamentos  
-22. Estratégia de Seeds e Dados de Demonstração  
-23. Padrão de Branches por Fase  
-24. Padrão de Commits por Fase  
-25. Matriz de Entregáveis por Dia  
-26. Checklist Final de Homologação  
-27. Recomendações Finais de Execução
+1. [Objetivo do Dicionário de Execução](#1-objetivo-do-dicionário-de-execução)  
+2. [Princípios de Execução](#2-princípios-de-execução)  
+3. [Ambiente Base de Trabalho no VS Code](#3-ambiente-base-de-trabalho-no-vs-code)  
+4. [Stack e Bibliotecas com Finalidade Técnica](#4-stack-e-bibliotecas-com-finalidade-técnica)  
+5. [Estratégia de Versionamento](#5-estratégia-de-versionamento)  
+6. [Tree View das Branches](#6-tree-view-das-branches)  
+7. [Sequência Macro de Execução em 15 Dias](#7-sequência-macro-de-execução-em-15-dias)  
+8. [Fase 0 — Preparação do Ambiente](#8-fase-0--preparação-do-ambiente)  
+9. [Fase 1 — Fundação do Repositório](#9-fase-1--fundação-do-repositório)  
+10. [Fase 2 — Fundação Visual do Frontend](#10-fase-2--fundação-visual-do-frontend)  
+11. [Fase 3 — Autenticação e Shell do Sistema](#11-fase-3--autenticação-e-shell-do-sistema)  
+12. [Fase 4 — Dashboard Inicial](#12-fase-4--dashboard-inicial)  
+13. [Fase 5 — Gestão de Usuárias](#13-fase-5--gestão-de-usuárias)  
+14. [Fase 6 — Solicitações Operacionais](#14-fase-6--solicitações-operacionais)  
+15. [Fase 7 — Histórico, Mídias e Conteúdo](#15-fase-7--histórico-mídias-e-conteúdo)  
+16. [Fase 8 — Backend Mínimo Funcional](#16-fase-8--backend-mínimo-funcional)  
+17. [Fase 9 — Integração Frontend + Backend](#17-fase-9--integração-frontend--backend)  
+18. [Fase 10 — Refino, QA e Demo](#18-fase-10--refino-qa-e-demo)  
+19. [Dicionário de Pastas e Arquivos](#19-dicionário-de-pastas-e-arquivos)  
+20. [Matriz de Banco de Dados](#20-matriz-de-banco-de-dados)  
+21. [Modelagem de Relacionamentos](#21-modelagem-de-relacionamentos)  
+22. [Estratégia de Seeds e Dados de Demonstração](#22-estratégia-de-seeds-e-dados-de-demonstração)  
+23. [Padrão de Branches por Fase](#23-padrão-de-branches-por-fase)  
+24. [Padrão de Commits por Fase](#24-padrão-de-commits-por-fase)  
+25. [Matriz de Entregáveis por Dia](#25-matriz-de-entregáveis-por-dia)  
+26. [Checklist Final de Homologação](#26-checklist-final-de-homologação)  
+27. [Recomendações Finais de Execução](#27-recomendações-finais-de-execução)
 
 ---
 
