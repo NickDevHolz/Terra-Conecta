@@ -1,234 +1,85 @@
-# 🚀 Terra Conecta — Proposta Institucional, Comercial e Técnica
-## Plataforma digital enterprise para assistência técnica, gestão operacional, inteligência de dados e evolução comercial no ambiente rural da CONAF
+# 🚀 Terra Conecta — Documento Técnico e Estratégico de Protótipo Web
+## Plataforma de protótipo digital para assistência técnica, gestão operacional, inteligência de dados e estruturação comercial no ambiente rural
 
 <div align="left">
 
-![Status](https://img.shields.io/badge/status-proposta%20executiva-16a34a?style=for-the-badge&logo=googledocs&logoColor=white)
-![Cliente](https://img.shields.io/badge/cliente-CONAF-0f766e?style=for-the-badge&logo=googlemessages&logoColor=white)
-![Modelo](https://img.shields.io/badge/estrategia-mobile%20first-0ea5e9?style=for-the-badge&logo=flutter&logoColor=white)
-![Arquitetura](https://img.shields.io/badge/arquitetura-monolito%20modular-7c3aed?style=for-the-badge&logo=nestjs&logoColor=white)
-![Governança](https://img.shields.io/badge/governanca-entrega%20por%20fases-0891b2?style=for-the-badge&logo=git&logoColor=white)
-![Prazo](https://img.shields.io/badge/prazo-16%20a%2018%20semanas-f59e0b?style=for-the-badge&logo=clockify&logoColor=white)
-![Investimento](https://img.shields.io/badge/investimento-R%24%2030.000,00-1d4ed8?style=for-the-badge&logo=googlewallet&logoColor=white)
+![Status](https://img.shields.io/badge/status-documento%20tecnico%20de%20prototipo-16a34a?style=for-the-badge&logo=googledocs&logoColor=white)
+![Modelo](https://img.shields.io/badge/estrategia-prototipo%20web%20executavel-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white)
+![Foco](https://img.shields.io/badge/foco-frontend%20first-0ea5e9?style=for-the-badge&logo=react&logoColor=white)
+![Stack](https://img.shields.io/badge/stack-typescript%20%7C%20react%20%7C%20flutter-7c3aed?style=for-the-badge&logo=nestjs&logoColor=white)
+![Arquitetura](https://img.shields.io/badge/arquitetura-monolito%20modular-0891b2?style=for-the-badge&logo=git&logoColor=white)
+![Execucao](https://img.shields.io/badge/execucao-15%20dias-f59e0b?style=for-the-badge&logo=clockify&logoColor=white)
+![Investimento](https://img.shields.io/badge/investimento-R%24%2060.000,00-1d4ed8?style=for-the-badge&logo=googlewallet&logoColor=white)
 
 </div>
 
 > [!IMPORTANT]
-> Esta proposta foi refinada para a **CONAF**, com foco em modernização operacional, controle de escopo, sustentabilidade técnica e equilíbrio entre capacidade de entrega, custo e impacto institucional.
+> Este documento reposiciona a proposta original como um **documento técnico e estratégico para execução de um protótipo web**, com foco em validação rápida, organização arquitetural previsível, forte atenção à experiência de frontend e base suficiente para evolução posterior sem superengenharia.
 
 > [!NOTE]
-> O objetivo não é propor uma plataforma inflada. A proposta está calibrada para implantar uma base digital robusta, confiável e evolutiva, sem antecipar complexidades que não geram retorno imediato nesta fase.
+> O objetivo deste protótipo não é entregar uma plataforma enterprise completa em 15 dias. O objetivo é construir uma **versão navegável, funcional, coerente e tecnicamente sustentável**, capaz de validar jornadas, regras centrais, interface, estrutura de dados e visão operacional.
 
 > [!TIP]
-> A melhor relação entre investimento e resultado, neste contexto, está em iniciar com arquitetura pragmática, governança forte, visão clara de riscos e um plano de entrega em ondas controladas.
+> Para este contexto, a decisão mais eficiente é concentrar esforço em **frontend de alta fidelidade**, backend mínimo porém correto, contratos estáveis, dados simulados ou parcialmente persistidos e arquitetura modular simples.
 
 ---
 
 # 📚 Sumário Executivo
 
-1. Visão Estratégica  
-2. Contexto Institucional da CONAF  
-3. Problema de Negócio e Oportunidade  
-4. Proposta de Valor  
-5. Objetivos da Iniciativa  
-6. Escopo Executivo da Solução  
-7. Escopo Funcional Detalhado  
-8. Fora de Escopo  
-9. Perfis de Usuário e Jornada  
-10. Arquitetura Corporativa Recomendada  
-11. Diagramas Técnicos e Fluxos  
-12. Tecnologias Recomendadas  
-13. Matrizes Comparativas  
-14. Matriz de Decisão Arquitetural  
-15. Requisitos Funcionais  
-16. Requisitos Não Funcionais  
-17. Regras de Negócio  
-18. Governança do Projeto  
-19. Plano de Entrega e Cronograma  
-20. Estratégia de Qualidade, Testes e Homologação  
-21. Operação, Deploy e Sustentação  
-22. Custos Operacionais Estimados  
-23. Investimento Comercial  
-24. Premissas Comerciais e de Execução  
-25. Riscos e Mitigações  
-26. Critérios de Sucesso  
-27. Recomendações Finais
+1. Visão do Protótipo  
+2. Objetivo Estratégico e Técnico  
+3. Premissas de Construção  
+4. Escopo Executivo do Protótipo  
+5. Escopo Funcional do Protótipo  
+6. Fora de Escopo do Protótipo  
+7. Perfis de Usuário e Jornadas  
+8. Diretrizes Arquiteturais  
+9. Arquitetura Recomendada do Protótipo  
+10. Diagramas Técnicos e Fluxos  
+11. Stack Tecnológica  
+12. Tree View do Projeto  
+13. Organização de Responsabilidades por Camada  
+14. Requisitos Funcionais  
+15. Requisitos Não Funcionais  
+16. Regras de Negócio  
+17. Plano Técnico e Estratégico de Execução em 15 Dias  
+18. Passo a Passo de Montagem do Protótipo  
+19. Estratégia de Qualidade e Homologação  
+20. Deploy, Operação e Sustentação do Protótipo  
+21. Matriz de Estimativa de Custo  
+22. Investimento Comercial  
+23. Riscos e Mitigações  
+24. Critérios de Sucesso  
+25. Recomendações Finais
 
 ---
 
-# 1. Visão Estratégica
+# 1. Visão do Protótipo
 
-A **CONAF** possui uma oportunidade concreta de elevar sua maturidade operacional por meio de uma plataforma digital própria, capaz de consolidar atendimento, gestão, conteúdo, histórico e inteligência institucional em um ecossistema centralizado.
+O **Terra Conecta** será tratado, nesta fase, como um **protótipo web de alto valor demonstrativo**, com foco em validar a experiência principal da solução, consolidar a narrativa de produto e estruturar uma base técnica inicial organizada.
 
-O **Terra Conecta** foi concebido como uma iniciativa de transformação pragmática: reduzir dispersão operacional, estruturar dados, criar previsibilidade e dar base real para evolução futura da operação.
+O protótipo deverá permitir:
 
-Mais do que um aplicativo, a proposta representa a criação de uma **infraestrutura digital institucional**, apta a sustentar processos, rastreabilidade, governança e expansão.
+- demonstrar a proposta de valor da solução de forma tangível;
+- validar jornadas centrais de uso;
+- apresentar uma interface institucional de alto nível;
+- simular uma operação real com consistência visual e funcional;
+- estabelecer uma base técnica inicial sem inflar a arquitetura.
 
-## Impactos Estratégicos Esperados
+Neste contexto, o frontend assume papel dominante, porque é nele que a percepção de valor, clareza operacional e maturidade do produto se tornam visíveis já no primeiro ciclo.
 
-- consolidação de canais e fluxos operacionais;
-- fortalecimento da capacidade de acompanhamento das usuárias;
-- padronização do registro de atendimentos e interações;
-- melhoria da previsibilidade da execução;
-- produção de indicadores confiáveis para tomada de decisão;
-- criação de base tecnológica própria para novos ciclos de crescimento.
+## Resultado esperado
 
-```mermaid
-%%{init: {
-'theme':'dark',
-'themeVariables':{
-'background':'#020617',
-'primaryColor':'#06b6d4',
-'primaryTextColor':'#f8fafc',
-'primaryBorderColor':'#22c55e',
-'lineColor':'#a855f7',
-'secondaryColor':'#0f172a',
-'secondaryTextColor':'#f8fafc',
-'tertiaryColor':'#111827',
-'tertiaryTextColor':'#f8fafc'
-}}}%%
-mindmap
-root((🌍 Terra Conecta<br/>CONAF))
-  📱 Frente de Relacionamento
-    Atendimento
-    Conteúdo
-    Histórico
-    Notificações
-    Envio de mídias
-  🖥️ Frente de Gestão
-    Usuárias
-    Operação
-    Relatórios
-    Permissões
-    Auditoria
-  ⚙️ Frente de Plataforma
-    API
-    Segurança
-    Banco de dados
-    Storage
-    Observabilidade
-  📈 Frente de Evolução
-    Indicadores
-    Governança
-    Escala
-    Novos módulos
-```
+Ao final dos 15 dias, o protótipo deve ser capaz de demonstrar:
 
----
-
-# 2. Contexto Institucional da CONAF
-
-A realidade operacional de organizações com atuação distribuída, relacionamento contínuo com público final e necessidade de acompanhamento individual costuma apresentar gargalos recorrentes:
-
-- registros espalhados entre canais e pessoas;
-- dependência de controles manuais;
-- baixa rastreabilidade;
-- dificuldade de consolidar histórico;
-- limitação para gerar indicadores confiáveis;
-- esforço elevado para manter continuidade operacional.
-
-Na prática, isso reduz velocidade, aumenta retrabalho e enfraquece a capacidade de decisão institucional.
-
-A proposta do **Terra Conecta** surge para enfrentar esse cenário com uma base digital estruturada, desenhada para a realidade da **CONAF**, respeitando restrições orçamentárias, necessidade de governança e evolução gradual.
-
----
-
-# 3. Problema de Negócio e Oportunidade
-
-## Situação atual sem plataforma dedicada
-
-Quando a operação depende de múltiplos canais, registros dispersos e processos não padronizados, os efeitos mais comuns são:
-
-- perda de contexto no atendimento;
-- dificuldade para acompanhar a jornada das usuárias;
-- baixa visibilidade gerencial;
-- inconsistência de dados;
-- dificuldade de prestação de contas;
-- baixa escalabilidade institucional.
-
-## Oportunidade concreta com a plataforma
-
-Com o **Terra Conecta**, a **CONAF** passa a contar com:
-
-- canal digital oficial;
-- histórico centralizado por usuária;
-- base única de atendimento e gestão;
-- visão executiva consolidada;
-- processo auditável;
-- estrutura pronta para novas ondas de evolução.
-
-> [!IMPORTANT]
-> O ganho central não está apenas em “ter um sistema”. Está em substituir operação fragmentada por uma operação institucionalmente organizada.
-
----
-
-# 4. Proposta de Valor
-
-## Valor Institucional
-
-- maior profissionalização da operação;
-- fortalecimento da governança;
-- base tecnológica própria;
-- capacidade de expansão organizada;
-- melhor rastreabilidade de ações e resultados.
-
-## Valor Operacional
-
-- menos retrabalho;
-- menos perda de contexto;
-- processos padronizados;
-- histórico acessível e consultável;
-- visão clara da execução.
-
-## Valor Estratégico
-
-- indicadores para tomada de decisão;
-- priorização baseada em evidência;
-- maior previsibilidade;
-- preparação para novos produtos e frentes digitais.
-
-```mermaid
-%%{init: {
-'theme':'dark',
-'themeVariables':{
-'background':'#020617',
-'primaryColor':'#0891b2',
-'primaryTextColor':'#f8fafc',
-'primaryBorderColor':'#22c55e',
-'lineColor':'#c084fc',
-'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
-}}}%%
-flowchart LR
-A[Operação fragmentada] --> B[Padronização digital]
-B --> C[Base única de dados]
-C --> D[Indicadores confiáveis]
-D --> E[Melhor decisão]
-E --> F[Maior capacidade institucional]
-```
-
----
-
-# 5. Objetivos da Iniciativa
-
-## Objetivo Geral
-
-Implantar uma plataforma digital modular, segura e sustentável para apoiar atendimento, gestão, conteúdo, histórico e inteligência operacional da **CONAF**.
-
-## Objetivos Específicos
-
-- digitalizar jornadas operacionais críticas;
-- centralizar o histórico de interações;
-- disponibilizar painel administrativo com visão consolidada;
-- estruturar indicadores essenciais;
-- garantir segurança, rastreabilidade e governança;
-- preparar base para expansão futura.
-
----
-
-# 6. Escopo Executivo da Solução
-
-A solução proposta está organizada em três frentes integradas.
+- acesso e navegação principal;
+- dashboard administrativo;
+- cadastro e consulta de usuárias;
+- abertura e acompanhamento de solicitações;
+- upload e listagem de mídias em fluxo controlado;
+- histórico consolidado por usuária;
+- biblioteca de conteúdos;
+- visão institucional coerente e apresentável.
 
 ```mermaid
 %%{init: {
@@ -240,199 +91,359 @@ A solução proposta está organizada em três frentes integradas.
 'primaryBorderColor':'#39ff14',
 'lineColor':'#a855f7',
 'secondaryColor':'#0f172a',
+'secondaryTextColor':'#e2e8f0',
+'tertiaryColor':'#111827',
+'tertiaryTextColor':'#f8fafc'
+}}}%%
+mindmap
+root((🌍 Terra Conecta<br/>Protótipo Web))
+  🎯 Validação
+    Jornada principal
+    Fluxos essenciais
+    Regras centrais
+  🖥️ Frontend
+    Dashboard
+    Gestão
+    Conteúdo
+    Histórico
+  ⚙️ Backend mínimo
+    API REST
+    Contratos
+    Mock + persistência simples
+  📈 Demonstração
+    Navegação real
+    Dados consistentes
+    Interface institucional
+```
+
+---
+
+# 2. Objetivo Estratégico e Técnico
+
+## Objetivo Estratégico
+
+Construir um protótipo web executável que permita validar a proposta de produto, alinhar expectativas, demonstrar valor institucional e reduzir incerteza antes de uma implementação ampliada.
+
+## Objetivo Técnico
+
+Implantar uma base técnica modular, simples e previsível, orientada por responsabilidades claras, com backend em TypeScript, frontend web em React, organização preparada para evolução e apoio conceitual de frontend mobile em Flutter para continuidade futura.
+
+## Objetivos específicos
+
+- transformar a proposta executiva em artefato técnico executável;
+- priorizar experiência de frontend e clareza de navegação;
+- construir contratos mínimos entre frontend e backend;
+- reduzir risco de retrabalho arquitetural;
+- criar uma árvore de projeto limpa e compreensível;
+- viabilizar demonstração institucional com aparência de produto real.
+
+---
+
+# 3. Premissas de Construção
+
+Para manter viabilidade real em 15 dias, o protótipo será guiado pelas premissas abaixo:
+
+- foco em fluxos principais, não em cobertura total;
+- frontend com prioridade de acabamento acima de profundidade operacional;
+- backend com escopo controlado e responsabilidade objetiva;
+- persistência simples e seletiva;
+- uso de dados mockados quando isso acelerar validação sem comprometer coerência;
+- autenticação simples, mas consistente com a narrativa do produto;
+- arquitetura monolítica modular, evitando distribuição prematura;
+- código organizado por domínio e responsabilidade;
+- ausência de abstrações ornamentais sem ganho imediato.
+
+> [!IMPORTANT]
+> Em protótipo de 15 dias, o maior erro é tentar reproduzir a versão final do produto. O protótipo deve ser fiel ao problema, não maximalista na solução.
+
+---
+
+# 4. Escopo Executivo do Protótipo
+
+O protótipo será organizado em três frentes coordenadas.
+
+```mermaid
+%%{init: {
+'theme':'dark',
+'themeVariables':{
+'background':'#020617',
+'primaryColor':'#06b6d4',
+'primaryTextColor':'#f8fafc',
+'primaryBorderColor':'#22c55e',
+'lineColor':'#c084fc',
+'secondaryColor':'#0f172a',
 'tertiaryColor':'#111827'
 }}}%%
 flowchart LR
-A[📱 Aplicativo Mobile] --> B[⚙️ Plataforma Central]
-C[🖥️ Painel Administrativo] --> B
-B --> D[(🗄️ PostgreSQL)]
-B --> E[(⚡ Redis)]
-B --> F[(🧾 Object Storage)]
-B --> G[🔔 Notificações Push]
-B --> H[📈 Logs e Monitoramento]
-B --> I[🔐 Segurança e Permissões]
+A[🖥️ Frontend Web React] --> B[⚙️ Backend TypeScript]
+C[📱 Diretriz Mobile Flutter] -. continuidade .-> B
+B --> D[(PostgreSQL opcional)]
+B --> E[(Storage simples)]
+B --> F[Mock services]
+B --> G[Logs básicos]
 ```
 
-## Frentes entregues
+## Frentes contempladas
 
-### 📱 Aplicativo Mobile
-Canal principal de uso das usuárias finais.
+### 4.1 Frontend Web de alta fidelidade
+Camada principal do protótipo, responsável por traduzir a experiência de uso, fluxos administrativos, percepção institucional e usabilidade.
 
-### 🖥️ Painel Administrativo
-Camada de gestão institucional, operação e visão executiva.
+### 4.2 Backend mínimo funcional
+Camada de suporte com API REST, validações, estruturas de domínio e persistência controlada apenas onde necessário para sustentar a demonstração.
 
-### ⚙️ Plataforma Central
-Núcleo responsável por regras, persistência, segurança, observabilidade e sustentação.
+### 4.3 Diretriz de continuidade mobile
+Estrutura conceitual para futura implementação em Flutter, mantendo alinhamento de design system, contratos e organização de domínio.
 
 ---
 
-# 7. Escopo Funcional Detalhado
+# 5. Escopo Funcional do Protótipo
 
-# 📱 Aplicativo Mobile
+## 5.1 Acesso e identidade
+- tela de login institucional;
+- recuperação simples de acesso;
+- sessão autenticada simulada ou real;
+- perfil básico do usuário autenticado;
+- logout e proteção de rotas principais.
 
-## 7.1 Acesso e Identidade
-- login seguro;
-- recuperação de acesso;
-- sessão autenticada;
-- atualização de perfil básico;
-- aceite de termos e políticas quando aplicável.
+## 5.2 Dashboard inicial
+- visão resumida da operação;
+- cards com métricas principais;
+- atalhos para áreas centrais;
+- painel com estado da operação;
+- visão executiva inicial.
 
-## 7.2 Jornada Inicial
-- onboarding guiado;
-- apresentação institucional;
-- orientação de uso inicial;
-- direcionamento para principais fluxos.
+## 5.3 Gestão de usuárias
+- listagem com filtros básicos;
+- cadastro de usuária;
+- edição simples de dados principais;
+- visualização de perfil;
+- histórico consolidado por usuária.
 
-## 7.3 Atendimento e Solicitações
-- abertura de solicitações;
-- categorização básica;
-- registro de contexto;
-- atualização de status;
-- acompanhamento do andamento.
+## 5.4 Atendimento e solicitações
+- criação de solicitação;
+- categorização inicial;
+- status operacional;
+- visualização detalhada;
+- acompanhamento por timeline;
+- atualização simples por perfis internos.
 
-## 7.4 Envio de Mídias
-- upload de foto;
-- upload de áudio;
-- upload de vídeo;
+## 5.5 Mídias e anexos
+- upload controlado de imagem, áudio e vídeo;
 - associação ao registro correto;
-- consulta de anexos por histórico.
+- listagem de anexos por solicitação;
+- visualização de metadados;
+- fluxo demonstrável mesmo com storage simplificado.
 
-## 7.5 Conteúdo
-- biblioteca de materiais;
-- guias práticos;
-- materiais orientativos;
-- filtros básicos por categoria;
-- visualização organizada.
+## 5.6 Conteúdo institucional
+- listagem de materiais;
+- filtro por categoria;
+- tela de detalhe;
+- cadastro e publicação simples no painel;
+- visual coerente com biblioteca institucional.
 
-## 7.6 Comunicação
-- notificações push;
-- alertas operacionais;
-- comunicados relevantes;
-- avisos de atualização e retorno.
+## 5.7 Histórico e rastreabilidade
+- timeline por usuária;
+- visualização de interações relevantes;
+- histórico de solicitações;
+- rastreio de atualizações principais;
+- base para auditoria simples.
 
-## 7.7 Histórico
-- linha do tempo individual;
-- visualização de interações anteriores;
-- continuidade de acompanhamento;
-- consulta de anexos e registros.
-
----
-
-# 🖥️ Painel Administrativo
-
-## 7.8 Gestão de Usuárias
-- cadastro;
-- consulta;
-- atualização;
-- filtros;
-- visualização de histórico consolidado.
-
-## 7.9 Gestão Operacional
-- acompanhamento de demandas;
-- visão consolidada;
-- organização por status;
-- priorização de atividades;
-- acompanhamento de fluxos críticos.
-
-## 7.10 Gestão de Conteúdo
-- cadastro de materiais;
-- atualização de conteúdo;
-- publicação controlada;
-- controle de disponibilidade.
-
-## 7.11 Relatórios e Indicadores
-- visão executiva;
-- visão operacional;
-- métricas básicas de uso;
-- métricas de acompanhamento;
-- exportações simples quando aplicável.
-
-## 7.12 Segurança e Permissões
-- perfis de acesso;
-- segregação de responsabilidades;
-- permissões por papel;
-- trilha de auditoria de ações sensíveis.
+## 5.8 Administração básica
+- perfis de acesso simulados ou iniciais;
+- segregação entre visualização e edição;
+- estrutura de permissões mínima;
+- área de parâmetros iniciais do protótipo.
 
 ---
 
-# ⚙️ Plataforma Central
+# 6. Fora de Escopo do Protótipo
 
-## 7.13 Core API
-- APIs REST;
-- contratos claros;
-- versionamento controlado;
-- validação de entrada;
-- padronização de respostas.
+Itens deliberadamente excluídos desta fase:
 
-## 7.14 Segurança
-- autenticação;
-- autorização;
-- proteção de rotas;
-- segregação por perfil;
-- boas práticas de segurança.
-
-## 7.15 Dados e Persistência
-- persistência relacional;
-- consistência transacional quando aplicável;
-- rastreabilidade;
-- histórico de alterações relevantes.
-
-## 7.16 Performance e Resiliência
-- cache em pontos específicos;
-- filas simples para operações oportunas;
-- respostas eficientes;
-- tratamento de falhas operacionais comuns.
-
-## 7.17 Operação e Observabilidade
-- logs estruturados;
-- monitoramento;
-- backups;
-- pipelines de deploy;
-- rastreamento de falhas.
-
-> [!NOTE]
-> O escopo foi desenhado para ser compatível com o investimento proposto. Capacidades mais avançadas podem ser incorporadas em ondas futuras sem comprometer a coerência arquitetural da base.
-
----
-
-# 8. Fora de Escopo
-
-Itens deliberadamente não contemplados nesta fase:
-
-- marketplace transacional avançado;
-- BI corporativo avançado;
+- arquitetura de microserviços;
+- mensageria distribuída robusta;
+- BI avançado;
+- analytics preditivo;
+- motores de recomendação;
 - IA generativa embarcada;
-- ERP rural completo;
-- integrações legadas extensas;
-- sensores de campo e IoT;
-- automações comerciais complexas;
-- multiempresa avançado;
-- offline enterprise amplo;
-- analytics preditivo avançado;
-- customizações extensas fora do escopo contratado.
+- modo offline complexo;
+- integrações extensas com sistemas terceiros;
+- workflows multiempresa avançados;
+- RBAC sofisticado com matriz granular completa;
+- observabilidade enterprise completa;
+- automações de negócio complexas.
 
 > [!IMPORTANT]
-> Definir claramente o fora de escopo é essencial para proteger prazo, orçamento e qualidade. A ausência dessa disciplina compromete viabilidade.
+> O protótipo deve validar valor, não exibir volume técnico artificial.
 
 ---
 
-# 9. Perfis de Usuário e Jornada
+# 7. Perfis de Usuário e Jornadas
 
 ## Perfis principais
 
+### Gestora
+Acompanha indicadores, vê o estado da operação e acessa relatórios resumidos.
+
+### Operadora
+Cadastra, consulta, acompanha solicitações, atualiza status e organiza o fluxo operacional.
+
+### Administradora
+Configura perfis básicos, revisa consistência do ambiente e supervisiona acessos principais.
+
 ### Usuária Final
-Interage pelo aplicativo, envia informações, consulta histórico, recebe conteúdo e acompanha retornos.
+Neste protótipo web, sua presença será demonstrada majoritariamente por registros, histórico e fluxos refletidos no painel. A interface mobile permanece como continuidade prevista.
 
-### Operadora/Equipe Interna
-Gerencia cadastros, acompanha solicitações, consulta histórico, publica conteúdo e monitora andamento.
+## Jornada macro do protótipo
 
-### Gestora/Coordenação
-Acompanha indicadores, valida prioridades, consulta relatórios e monitora a performance operacional.
+```mermaid
+%%{init: {
+'theme':'dark',
+'themeVariables':{
+'background':'#020617',
+'primaryColor':'#0ea5e9',
+'primaryTextColor':'#f8fafc',
+'primaryBorderColor':'#22c55e',
+'lineColor':'#a855f7',
+'secondaryColor':'#0f172a',
+'tertiaryColor':'#111827'
+}}}%%
+flowchart LR
+A[Login] --> B[Dashboard]
+B --> C[Gestão de usuárias]
+B --> D[Solicitações]
+B --> E[Conteúdo]
+D --> F[Detalhe da solicitação]
+F --> G[Upload de mídia]
+F --> H[Atualização de status]
+C --> I[Perfil da usuária]
+I --> J[Histórico consolidado]
+```
 
-### Administradora do Sistema
-Gerencia perfis, permissões, parâmetros e governança técnica básica.
+---
 
-## Jornada macro
+# 8. Diretrizes Arquiteturais
+
+A arquitetura deve seguir princípios de execução enxuta:
+
+- monólito modular previsível;
+- fronteiras simples entre módulos;
+- contratos explícitos;
+- baixa navegação mental entre arquivos;
+- responsabilidade clara por camada;
+- backend sustentando o frontend, não competindo com ele em complexidade;
+- organização para evolução sem antecipar extrações.
+
+## Princípios de decisão
+
+### Simplicidade operacional
+Cada módulo deve ser compreendido com leitura curta e fluxo visível.
+
+### Modularidade pragmática
+Separar por domínio apenas quando isso melhora clareza, não por gosto arquitetural.
+
+### Frontend-first no protótipo
+A maior energia deve estar em telas, estados, componentes, navegação e consistência visual.
+
+### Backend como sustentação
+A API precisa ser correta, pequena e estável. Não deve inflar a solução.
+
+### Evolução controlada
+A base deve aceitar continuidade futura, mas sem introduzir camadas abstratas não utilizadas agora.
+
+---
+
+# 9. Arquitetura Recomendada do Protótipo
+
+## Escolha arquitetural
+
+A recomendação é um **monólito modular com frontend desacoplado**, composto por:
+
+- frontend web React como núcleo demonstrativo;
+- backend TypeScript com API REST simples;
+- persistência seletiva;
+- organização por domínios funcionais;
+- design system leve e reutilizável;
+- possibilidade futura de reaproveitar contratos e modelo em Flutter.
+
+```mermaid
+%%{init: {
+'theme':'dark',
+'themeVariables':{
+'background':'#020617',
+'primaryColor':'#22d3ee',
+'primaryTextColor':'#f8fafc',
+'primaryBorderColor':'#39ff14',
+'lineColor':'#c084fc',
+'secondaryColor':'#0f172a',
+'tertiaryColor':'#111827'
+}}}%%
+flowchart TB
+subgraph Frontend[Frontend Web - React]
+A[App Shell]
+B[Auth Pages]
+C[Dashboard]
+D[Usuárias]
+E[Solicitações]
+F[Conteúdo]
+G[Histórico]
+H[UI Shared]
+end
+
+subgraph Backend[Backend API - TypeScript]
+I[HTTP API]
+J[Auth Module]
+K[Users Module]
+L[Requests Module]
+M[Content Module]
+N[Media Module]
+O[Audit Module]
+P[Shared]
+end
+
+subgraph Infra[Infra mínima]
+Q[(PostgreSQL ou SQLite em dev)]
+R[(Object Storage local/S3 compatível)]
+S[Logger]
+T[Env Config]
+end
+
+A --> I
+B --> I
+C --> I
+D --> I
+E --> I
+F --> I
+G --> I
+I --> J
+I --> K
+I --> L
+I --> M
+I --> N
+I --> O
+K --> Q
+L --> Q
+M --> Q
+N --> R
+I --> S
+I --> T
+```
+
+## Racional
+
+Essa composição permite:
+
+- entrega rápida;
+- leitura arquitetural simples;
+- boa experiência demonstrativa;
+- sustentação mínima técnica;
+- futura continuidade sem retrabalho estrutural grave.
+
+---
+
+# 10. Diagramas Técnicos e Fluxos
+
+## 10.1 Fluxo de autenticação e entrada
 
 ```mermaid
 %%{init: {
@@ -446,43 +457,44 @@ Gerencia perfis, permissões, parâmetros e governança técnica básica.
 'secondaryColor':'#0f172a',
 'tertiaryColor':'#111827'
 }}}%%
-flowchart LR
-A[Cadastro / Login] --> B[Onboarding]
-B --> C[Abertura de solicitação]
-C --> D[Envio de contexto e mídia]
-D --> E[Acompanhamento]
-E --> F[Consulta de histórico]
-F --> G[Recebimento de conteúdo e notificações]
+sequenceDiagram
+participant U as Usuário Interno
+participant W as React Web
+participant A as API TypeScript
+participant D as Dados
+
+U->>W: Informa credenciais
+W->>A: POST /auth/login
+A->>D: Valida usuário
+D-->>A: Usuário válido
+A-->>W: Sessão / token
+W-->>U: Acesso ao dashboard
 ```
 
----
+## 10.2 Fluxo de gestão de usuárias
 
-# 10. Arquitetura Corporativa Recomendada
+```mermaid
+%%{init: {
+'theme':'dark',
+'themeVariables':{
+'background':'#020617',
+'primaryColor':'#22d3ee',
+'primaryTextColor':'#f8fafc',
+'primaryBorderColor':'#39ff14',
+'lineColor':'#c084fc',
+'secondaryColor':'#0f172a',
+'tertiaryColor':'#111827'
+}}}%%
+flowchart LR
+A[Listagem de usuárias] --> B[Filtros]
+B --> C[Seleção da usuária]
+C --> D[Perfil detalhado]
+D --> E[Histórico]
+D --> F[Solicitações vinculadas]
+D --> G[Edição de dados básicos]
+```
 
-## Escolha arquitetural: monólito modular
-
-A recomendação para a **CONAF** é um **monólito modular**, com domínios organizados internamente e infraestrutura preparada para crescimento gradual.
-
-Essa escolha equilibra:
-
-- custo de implantação;
-- velocidade de entrega;
-- previsibilidade operacional;
-- simplicidade de manutenção;
-- menor risco de arquitetura excessiva;
-- capacidade de expansão futura por módulos.
-
-## Racional da escolha
-
-Microserviços, embora sejam úteis em determinados cenários, adicionam sobrecarga operacional, complexidade de deploy, exigência maior de observabilidade, contratos distribuídos e custo superior de sustentação. Para esta etapa, isso reduziria eficiência e aumentaria risco sem ganho proporcional.
-
-## Evolução natural esperada
-
-A base pode crescer em três direções:
-
-- novos módulos dentro do próprio backend modular;
-- incremento de integrações externas conforme necessidade real;
-- eventual extração de capacidades específicas no futuro, se houver escala que justifique.
+## 10.3 Fluxo de solicitação e atualização operacional
 
 ```mermaid
 %%{init: {
@@ -497,105 +509,17 @@ A base pode crescer em três direções:
 'tertiaryColor':'#111827'
 }}}%%
 flowchart TB
-subgraph Frontends
-A[📱 Flutter App]
-B[🖥️ React Admin]
-end
-
-subgraph Backend Modular
-C[🌐 API Gateway HTTP]
-D[🔐 Módulo Auth]
-E[👥 Módulo Usuárias]
-F[📝 Módulo Atendimento]
-G[📚 Módulo Conteúdo]
-H[📊 Módulo Relatórios]
-I[📎 Módulo Arquivos]
-J[🔔 Módulo Notificações]
-end
-
-subgraph Infraestrutura
-K[(PostgreSQL)]
-L[(Redis)]
-M[(Object Storage)]
-N[📈 Logs]
-O[🛡️ Monitoramento]
-end
-
-A --> C
-B --> C
-C --> D
-C --> E
-C --> F
-C --> G
-C --> H
-C --> I
-C --> J
-E --> K
-F --> K
-G --> K
-H --> K
-C --> L
-I --> M
-C --> N
-C --> O
+A[Nova solicitação] --> B[Definição de categoria]
+B --> C[Registro inicial]
+C --> D[Status aberto]
+D --> E[Anexar mídia]
+E --> F[Atualização operacional]
+F --> G[Status em andamento]
+G --> H[Fechamento demonstrativo]
+H --> I[Histórico consolidado]
 ```
 
----
-
-# 11. Diagramas Técnicos e Fluxos
-
-## 11.1 Fluxo funcional de atendimento
-
-```mermaid
-%%{init: {
-'theme':'dark',
-'themeVariables':{
-'background':'#020617',
-'primaryColor':'#22d3ee',
-'primaryTextColor':'#f8fafc',
-'primaryBorderColor':'#39ff14',
-'lineColor':'#a855f7',
-'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
-}}}%%
-flowchart LR
-A[Usuária acessa app] --> B[Autenticação]
-B --> C[Cria solicitação]
-C --> D[Anexa mídia e contexto]
-D --> E[Solicitação registrada]
-E --> F[Equipe acompanha no painel]
-F --> G[Atualiza status]
-G --> H[Usuária recebe notificação]
-H --> I[Histórico atualizado]
-```
-
-## 11.2 Fluxo administrativo e gerencial
-
-```mermaid
-%%{init: {
-'theme':'dark',
-'themeVariables':{
-'background':'#020617',
-'primaryColor':'#06b6d4',
-'primaryTextColor':'#f8fafc',
-'primaryBorderColor':'#22c55e',
-'lineColor':'#c084fc',
-'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
-}}}%%
-flowchart TB
-A[Login administrativo] --> B[Dashboard]
-B --> C[Gestão de usuárias]
-B --> D[Gestão operacional]
-B --> E[Conteúdo]
-B --> F[Relatórios]
-B --> G[Permissões]
-D --> H[Priorização]
-D --> I[Acompanhamento]
-D --> J[Fechamento / retorno]
-```
-
-## 11.3 Fluxo técnico de upload de mídias
+## 10.4 Fluxo técnico de upload de mídias
 
 ```mermaid
 %%{init: {
@@ -610,21 +534,20 @@ D --> J[Fechamento / retorno]
 'tertiaryColor':'#111827'
 }}}%%
 sequenceDiagram
-participant U as Usuária
-participant M as Mobile App
-participant A as API
-participant S as Storage
-participant D as Banco
+participant R as React App
+participant API as Backend API
+participant ST as Storage
+participant DB as Banco
 
-U->>M: Seleciona mídia
-M->>A: Envia metadados + upload
-A->>S: Armazena arquivo
-A->>D: Registra vínculo e histórico
-A-->>M: Confirmação
-M-->>U: Exibe sucesso
+R->>API: Solicita upload
+API->>ST: Persiste arquivo
+ST-->>API: URL / chave
+API->>DB: Salva metadados
+DB-->>API: Registro criado
+API-->>R: Resposta com anexo vinculado
 ```
 
-## 11.4 Fluxo de deploy e governança técnica
+## 10.5 Fluxo de publicação de conteúdo
 
 ```mermaid
 %%{init: {
@@ -634,298 +557,490 @@ M-->>U: Exibe sucesso
 'primaryColor':'#06efff',
 'primaryTextColor':'#f8fafc',
 'primaryBorderColor':'#22c55e',
+'lineColor':'#c084fc',
+'secondaryColor':'#0f172a',
+'tertiaryColor':'#111827'
+}}}%%
+flowchart LR
+A[Admin acessa conteúdo] --> B[Cria ou edita material]
+B --> C[Valida categoria]
+C --> D[Publica]
+D --> E[Listagem atualizada]
+E --> F[Consulta no frontend]
+```
+
+## 10.6 Fluxo de entrega do protótipo em 15 dias
+
+```mermaid
+%%{init: {
+'theme':'dark',
+'themeVariables':{
+'background':'#020617',
+'primaryColor':'#0ea5e9',
+'primaryTextColor':'#f8fafc',
+'primaryBorderColor':'#39ff14',
 'lineColor':'#a855f7',
 'secondaryColor':'#0f172a',
 'tertiaryColor':'#111827'
 }}}%%
 flowchart LR
-A[Desenvolvimento] --> B[Code Review]
-B --> C[Testes]
-C --> D[Build e Pipeline]
-D --> E[Staging]
-E --> F[Homologação CONAF]
-F --> G[Go Live]
-G --> H[Monitoramento]
-H --> I[Ajustes iniciais]
+A[Dia 1-2
+Fundação] --> B[Dia 3-5
+UI Base + Navegação]
+B --> C[Dia 6-8
+Módulos centrais]
+C --> D[Dia 9-11
+Integração e refinamento]
+D --> E[Dia 12-13
+Homologação interna]
+E --> F[Dia 14-15
+Ajustes e demonstração]
 ```
 
 ---
 
-# 12. Tecnologias Recomendadas
+# 11. Stack Tecnológica
 
-## Mobile
+## Frontend Web
+**React + TypeScript**
+
+Motivos:
+- alta produtividade para interfaces administrativas;
+- excelente aderência a prototipação navegável;
+- bom ecossistema para tabelas, formulários e dashboards;
+- facilidade de componentização;
+- forte compatibilidade com design system.
+
+## Mobile de continuidade
 **Flutter**
 
 Motivos:
-- boa produtividade;
-- experiência visual consistente;
-- base única de código;
-- boa performance;
-- custo-benefício adequado para MVP e evolução.
-
-## Painel Web
-**React**
-
-Motivos:
-- boa maturidade de ecossistema;
-- flexibilidade para painel administrativo;
-- excelente aderência a dashboards e interfaces internas.
+- preparação para evolução posterior do canal mobile;
+- boa aderência a interface orientada a jornada;
+- compartilhamento conceitual de design e contratos.
 
 ## Backend
-**NestJS + TypeScript**
+**TypeScript com NestJS ou estrutura HTTP modular equivalente**
 
 Motivos:
-- organização modular;
-- tipagem forte;
-- boa escalabilidade estrutural;
-- facilidade para manter contratos claros;
-- bom fit para APIs institucionais.
+- contratos claros;
+- organização modular previsível;
+- boa manutenção em time pequeno;
+- forte aderência a APIs institucionais.
 
-## Banco de Dados
+## Banco de dados
 **PostgreSQL**
 
-Motivos:
-- robustez;
-- confiabilidade;
-- recursos avançados;
-- aderência a aplicações corporativas.
-
-## Cache/Filas Leves
-**Redis**
-
-Motivos:
-- simplicidade operacional;
-- bom suporte a cache e filas curtas;
-- apoio a notificações e aceleração de fluxos.
+Para o protótipo, pode ser substituído localmente por opção simplificada em desenvolvimento, desde que contratos e estrutura de domínio permaneçam coerentes.
 
 ## Storage
-**Object Storage compatível com S3**
+**Object Storage compatível com S3** ou solução local equivalente para demonstração.
 
-Motivos:
-- bom custo para arquivos;
-- escalabilidade;
-- segurança;
-- separação adequada entre dados estruturados e anexos.
-
-## Observabilidade
-**Logs estruturados + monitoramento de ambiente**
-
-Motivos:
-- suporte à sustentação;
-- melhor capacidade de diagnóstico;
-- redução de tempo de resposta a falhas.
+## UI e estilo
+- design tokens simples;
+- componentes reutilizáveis;
+- paleta visual consistente;
+- foco em telas administrativas limpas e legíveis.
 
 ---
 
-# 13. Matrizes Comparativas
+# 12. Tree View do Projeto
 
-## 13.1 Mobile
+Abaixo, uma organização pragmática, modular, monolítica e previsível, com foco em responsabilidade clara e baixa sobrecarga cognitiva.
 
-| Critério | Peso | Flutter | React Native | Observação |
-|---|---:|---:|---:|---|
-| Performance | 5 | 9 | 7 | Flutter leva vantagem |
-| Consistência UI | 4 | 9 | 8 | Flutter favorece uniformidade |
-| Produtividade | 4 | 9 | 9 | Equilíbrio |
-| Manutenção | 4 | 9 | 8 | Flutter ligeiramente melhor |
-| Ecossistema | 3 | 8 | 9 | React Native competitivo |
-| Total ponderado |  | **118** | **106** | **Escolha: Flutter** |
+```text
+terra-conecta/
+├── apps/
+│   ├── web/
+│   │   ├── public/
+│   │   │   └── favicon.ico
+│   │   └── src/
+│   │       ├── app/
+│   │       │   ├── router/
+│   │       │   │   ├── index.tsx
+│   │       │   │   ├── protected-route.tsx
+│   │       │   │   └── route-definitions.ts
+│   │       │   ├── providers/
+│   │       │   │   ├── auth-provider.tsx
+│   │       │   │   ├── query-provider.tsx
+│   │       │   │   └── theme-provider.tsx
+│   │       │   ├── layouts/
+│   │       │   │   ├── app-layout.tsx
+│   │       │   │   ├── auth-layout.tsx
+│   │       │   │   └── dashboard-layout.tsx
+│   │       │   └── store/
+│   │       │       └── session-store.ts
+│   │       ├── modules/
+│   │       │   ├── auth/
+│   │       │   │   ├── pages/
+│   │       │   │   │   ├── login-page.tsx
+│   │       │   │   │   └── forgot-password-page.tsx
+│   │       │   │   ├── components/
+│   │       │   │   │   └── login-form.tsx
+│   │       │   │   ├── services/
+│   │       │   │   │   └── auth-api.ts
+│   │       │   │   └── model/
+│   │       │   │       └── auth.types.ts
+│   │       │   ├── dashboard/
+│   │       │   │   ├── pages/
+│   │       │   │   │   └── dashboard-page.tsx
+│   │       │   │   ├── components/
+│   │       │   │   │   ├── metrics-cards.tsx
+│   │       │   │   │   ├── status-panel.tsx
+│   │       │   │   │   └── recent-activity.tsx
+│   │       │   │   └── services/
+│   │       │   │       └── dashboard-api.ts
+│   │       │   ├── users/
+│   │       │   │   ├── pages/
+│   │       │   │   │   ├── users-list-page.tsx
+│   │       │   │   │   ├── user-details-page.tsx
+│   │       │   │   │   └── user-form-page.tsx
+│   │       │   │   ├── components/
+│   │       │   │   │   ├── users-table.tsx
+│   │       │   │   │   ├── user-summary-card.tsx
+│   │       │   │   │   ├── user-history-timeline.tsx
+│   │       │   │   │   └── user-form.tsx
+│   │       │   │   ├── services/
+│   │       │   │   │   └── users-api.ts
+│   │       │   │   └── model/
+│   │       │   │       └── user.types.ts
+│   │       │   ├── requests/
+│   │       │   │   ├── pages/
+│   │       │   │   │   ├── requests-list-page.tsx
+│   │       │   │   │   ├── request-details-page.tsx
+│   │       │   │   │   └── request-create-page.tsx
+│   │       │   │   ├── components/
+│   │       │   │   │   ├── requests-table.tsx
+│   │       │   │   │   ├── request-status-badge.tsx
+│   │       │   │   │   ├── request-timeline.tsx
+│   │       │   │   │   ├── request-form.tsx
+│   │       │   │   │   └── media-upload-panel.tsx
+│   │       │   │   ├── services/
+│   │       │   │   │   └── requests-api.ts
+│   │       │   │   └── model/
+│   │       │   │       └── request.types.ts
+│   │       │   ├── content/
+│   │       │   │   ├── pages/
+│   │       │   │   │   ├── content-list-page.tsx
+│   │       │   │   │   ├── content-details-page.tsx
+│   │       │   │   │   └── content-form-page.tsx
+│   │       │   │   ├── components/
+│   │       │   │   │   ├── content-grid.tsx
+│   │       │   │   │   ├── content-filters.tsx
+│   │       │   │   │   └── content-form.tsx
+│   │       │   │   ├── services/
+│   │       │   │   │   └── content-api.ts
+│   │       │   │   └── model/
+│   │       │   │       └── content.types.ts
+│   │       │   └── shared/
+│   │       │       ├── components/
+│   │       │       │   ├── page-header.tsx
+│   │       │       │   ├── data-table.tsx
+│   │       │       │   ├── empty-state.tsx
+│   │       │       │   ├── app-sidebar.tsx
+│   │       │       │   └── app-topbar.tsx
+│   │       │       ├── hooks/
+│   │       │       │   ├── use-pagination.ts
+│   │       │       │   └── use-debounce.ts
+│   │       │       ├── utils/
+│   │       │       │   ├── format-date.ts
+│   │       │       │   └── format-status.ts
+│   │       │       └── styles/
+│   │       │           ├── tokens.ts
+│   │       │           └── theme.css
+│   │       ├── assets/
+│   │       │   ├── icons/
+│   │       │   └── images/
+│   │       ├── main.tsx
+│   │       └── vite-env.d.ts
+│   ├── api/
+│   │   └── src/
+│   │       ├── main.ts
+│   │       ├── app.module.ts
+│   │       ├── shared/
+│   │       │   ├── config/
+│   │       │   │   ├── env.ts
+│   │       │   │   └── app-config.ts
+│   │       │   ├── http/
+│   │       │   │   ├── api-response.ts
+│   │       │   │   └── exception-filter.ts
+│   │       │   ├── auth/
+│   │       │   │   ├── auth.guard.ts
+│   │       │   │   └── current-user.ts
+│   │       │   ├── logger/
+│   │       │   │   └── logger.service.ts
+│   │       │   └── utils/
+│   │       │       └── date.util.ts
+│   │       ├── modules/
+│   │       │   ├── auth/
+│   │       │   │   ├── auth.module.ts
+│   │       │   │   ├── infra/
+│   │       │   │   │   ├── auth.controller.ts
+│   │       │   │   │   └── auth.service.ts
+│   │       │   │   └── model/
+│   │       │   │       └── auth.contracts.ts
+│   │       │   ├── users/
+│   │       │   │   ├── users.module.ts
+│   │       │   │   ├── infra/
+│   │       │   │   │   ├── users.controller.ts
+│   │       │   │   │   ├── users.service.ts
+│   │       │   │   │   └── users.dao.ts
+│   │       │   │   └── model/
+│   │       │   │       └── users.contracts.ts
+│   │       │   ├── requests/
+│   │       │   │   ├── requests.module.ts
+│   │       │   │   ├── infra/
+│   │       │   │   │   ├── requests.controller.ts
+│   │       │   │   │   ├── requests.service.ts
+│   │       │   │   │   └── requests.dao.ts
+│   │       │   │   └── model/
+│   │       │   │       └── requests.contracts.ts
+│   │       │   ├── content/
+│   │       │   │   ├── content.module.ts
+│   │       │   │   ├── infra/
+│   │       │   │   │   ├── content.controller.ts
+│   │       │   │   │   ├── content.service.ts
+│   │       │   │   │   └── content.dao.ts
+│   │       │   │   └── model/
+│   │       │   │       └── content.contracts.ts
+│   │       │   ├── media/
+│   │       │   │   ├── media.module.ts
+│   │       │   │   ├── infra/
+│   │       │   │   │   ├── media.controller.ts
+│   │       │   │   │   ├── media.service.ts
+│   │       │   │   │   └── media.storage.ts
+│   │       │   │   └── model/
+│   │       │   │       └── media.contracts.ts
+│   │       │   └── dashboard/
+│   │       │       ├── dashboard.module.ts
+│   │       │       ├── infra/
+│   │       │       │   ├── dashboard.controller.ts
+│   │       │       │   └── dashboard.service.ts
+│   │       │       └── model/
+│   │       │           └── dashboard.contracts.ts
+│   │       └── database/
+│   │           ├── schema.sql
+│   │           └── seed.ts
+│   └── mobile/
+│       └── lib/
+│           ├── app/
+│           ├── modules/
+│           ├── shared/
+│           └── main.dart
+├── docs/
+│   ├── architecture/
+│   │   ├── overview.md
+│   │   ├── frontend-guidelines.md
+│   │   └── api-contracts.md
+│   ├── execution/
+│   │   ├── 15-day-plan.md
+│   │   └── checklist.md
+│   └── product/
+│       └── prototype-scope.md
+├── package.json
+├── pnpm-workspace.yaml
+├── turbo.json
+├── README.md
+└── .env.example
+```
 
-## 13.2 Backend
+## Leitura da tree view
 
-| Critério | Peso | NestJS | Laravel | Observação |
-|---|---:|---:|---:|---|
-| Organização modular | 5 | 10 | 8 | NestJS superior |
-| Tipagem e contratos | 5 | 10 | 6 | NestJS superior |
-| Escalabilidade estrutural | 4 | 9 | 8 | NestJS melhor |
-| Velocidade de evolução | 4 | 9 | 8 | Leve vantagem NestJS |
-| Aderência ao time técnico | 4 | 9 | 7 | NestJS mais aderente |
-| Total ponderado |  | **154** | **120** | **Escolha: NestJS** |
-
-## 13.3 Banco de Dados
-
-| Critério | Peso | PostgreSQL | MySQL | Observação |
-|---|---:|---:|---:|---|
-| Robustez | 5 | 10 | 8 | PostgreSQL superior |
-| Recursos avançados | 4 | 9 | 7 | PostgreSQL superior |
-| Crescimento futuro | 4 | 9 | 8 | PostgreSQL melhor |
-| Confiabilidade | 5 | 10 | 8 | PostgreSQL melhor |
-| Total ponderado |  | **122** | **96** | **Escolha: PostgreSQL** |
-
-## 13.4 Arquitetura
-
-| Critério | Peso | Monólito Modular | Microserviços | Observação |
-|---|---:|---:|---:|---|
-| Custo inicial | 5 | 10 | 4 | Monólito muito melhor |
-| Velocidade de entrega | 5 | 10 | 5 | Monólito melhor |
-| Operação | 4 | 9 | 5 | Monólito melhor |
-| Complexidade | 5 | 9 | 4 | Monólito melhor |
-| Evolução futura | 3 | 8 | 9 | Microserviços ganham aqui |
-| Total ponderado |  | **154** | **86** | **Escolha: Monólito Modular** |
+- `apps/web` concentra a entrega principal do protótipo;
+- `apps/api` sustenta fluxos e contratos com responsabilidade controlada;
+- `apps/mobile` existe como continuidade estrutural, não como foco de entrega;
+- `docs` registra decisões, contratos e execução;
+- a modularidade está presente, mas sem multiplicação desnecessária de camadas.
 
 ---
 
-# 14. Matriz de Decisão Arquitetural
+# 13. Organização de Responsabilidades por Camada
 
-## Decisão consolidada
+## Frontend Web
+Responsável por:
+- experiência de uso;
+- navegação;
+- estados de tela;
+- formulários;
+- componentes compartilhados;
+- apresentação de dados;
+- coerência visual;
+- feedback operacional ao usuário.
 
-| Eixo de decisão | Opção recomendada | Justificativa |
-|---|---|---|
-| Aplicativo | Flutter | melhor equilíbrio entre custo, performance e consistência |
-| Painel administrativo | React | excelente aderência a interfaces internas e dashboards |
-| Backend | NestJS | modularidade, contratos, tipagem e crescimento sustentável |
-| Banco | PostgreSQL | robustez e confiabilidade institucional |
-| Cache/Fila leve | Redis | simplicidade e apoio a performance operacional |
-| Arquitetura | Monólito Modular | menor risco, maior velocidade e melhor custo-benefício |
-| Armazenamento | Object Storage | melhor adequação para anexos e mídias |
-| Observabilidade | Logs + monitoramento | sustentação mínima madura para produção |
+## Backend API
+Responsável por:
+- contratos HTTP;
+- validações de entrada;
+- regras centrais mínimas;
+- persistência seletiva;
+- agregação de dados para o frontend;
+- proteção de rotas e sessão básica.
+
+## DAO / Persistência
+Responsável apenas por:
+- leitura e escrita de dados;
+- consultas simples e previsíveis;
+- nenhuma decisão de fluxo de negócio complexa.
+
+## Shared
+Responsável apenas por:
+- utilidades genuinamente reutilizáveis;
+- configurações comuns;
+- estrutura transversal mínima.
 
 > [!IMPORTANT]
-> A matriz de decisão foi construída para maximizar viabilidade real, e não para perseguir a arquitetura “mais sofisticada”. O critério dominante é adequação ao momento da CONAF.
+> O critério de separação não é “deixar bonito”. É impedir mistura indevida de responsabilidade e manter o fluxo visível.
 
 ---
 
-# 15. Requisitos Funcionais
+# 14. Requisitos Funcionais
 
 ## Requisitos principais
 
-- autenticação de usuárias e equipe interna;
-- recuperação de acesso;
-- cadastro e edição de perfis;
-- abertura de solicitações;
-- atualização de status de solicitações;
-- envio e consulta de anexos;
-- histórico individual por usuária;
-- biblioteca de conteúdo;
-- notificações relevantes;
-- painel administrativo com filtros;
-- dashboards executivos e operacionais;
-- gestão de perfis e permissões;
-- trilha de auditoria para ações sensíveis.
+- autenticação de usuários internos;
+- acesso a dashboard com visão resumida da operação;
+- cadastro, edição, listagem e detalhamento de usuárias;
+- abertura de solicitações com campos essenciais;
+- atualização de status operacional;
+- upload e listagem de anexos vinculados;
+- consulta de histórico por usuária;
+- gestão de conteúdo institucional;
+- filtros de busca em módulos principais;
+- visualização de indicadores básicos;
+- segregação mínima por perfil;
+- rastreabilidade de interações relevantes.
 
 ## Requisitos complementares
 
-- busca básica;
-- categorização de conteúdos;
-- categorização de atendimentos;
-- indicadores mínimos de uso e operação;
-- exportação simples de informações estratégicas quando aplicável.
+- estados visuais consistentes de carregamento, vazio e erro;
+- feedback de sucesso e falha em ações críticas;
+- ordenação básica em tabelas;
+- paginação simples quando aplicável;
+- componentes reutilizáveis para acelerar evolução futura.
+
+## Requisitos demonstrativos
+
+- jornada navegável fim a fim;
+- consistência visual entre módulos;
+- dados de demonstração coerentes;
+- capacidade de apresentação institucional sem dependência de fala explicativa constante.
 
 ---
 
-# 16. Requisitos Não Funcionais
+# 15. Requisitos Não Funcionais
 
 ## Segurança
-- autenticação segura;
-- proteção de rotas;
-- segregação por papel;
-- tratamento adequado de dados e acessos.
+- autenticação básica segura;
+- proteção de rotas internas;
+- validação de entrada no backend;
+- segregação mínima por perfil;
+- tratamento básico de sessão e logout.
 
 ## Performance
-- tempo de resposta adequado para fluxos principais;
-- upload estável de arquivos;
-- uso de cache em pontos necessários.
-
-## Disponibilidade
-- ambiente minimamente resiliente;
-- monitoramento de saúde da aplicação;
-- backups recorrentes.
-
-## Observabilidade
-- logs estruturados;
-- monitoramento de falhas;
-- visibilidade operacional.
-
-## Manutenibilidade
-- código organizado por domínios;
-- contratos claros;
-- modularidade coerente.
-
-## Escalabilidade Controlada
-- crescimento por módulos;
-- ampliação progressiva de recursos;
-- possibilidade de evoluções futuras sem reescrever a base.
+- carregamento rápido das telas principais;
+- resposta adequada em operações centrais;
+- upload funcional sem degradação severa;
+- renderização estável de tabelas e formulários.
 
 ## Usabilidade
-- fluxo simples;
-- linguagem objetiva;
-- boa experiência no mobile e no painel.
+- navegação clara;
+- baixa fricção na execução de tarefas;
+- hierarquia visual consistente;
+- textos objetivos;
+- responsividade adequada para desktop e tablet.
+
+## Manutenibilidade
+- módulos legíveis;
+- contratos explícitos;
+- separação limpa por domínio;
+- componentes reutilizáveis sem abstração excessiva.
+
+## Observabilidade
+- logs básicos do backend;
+- identificação de erros principais;
+- possibilidade de diagnóstico rápido durante demonstração.
+
+## Evolução controlada
+- capacidade de extensão por módulos;
+- reaproveitamento de contratos entre frontend e backend;
+- preparação para futura derivação mobile em Flutter.
+
+## Confiabilidade do protótipo
+- ambiente estável para apresentação;
+- dados previsíveis;
+- fluxos sem dependência de integrações frágeis;
+- fallback simples para cenários não implementados integralmente.
 
 ---
 
-# 17. Regras de Negócio
+# 16. Regras de Negócio
 
 ## Regras centrais
 
-- cada usuária deve possuir histórico próprio e consultável;
-- toda solicitação relevante deve ficar vinculada à usuária correta;
-- anexos devem ser vinculados ao contexto certo;
-- ações administrativas sensíveis devem ser rastreáveis;
-- conteúdo publicado deve respeitar governança institucional;
-- mudanças relevantes de escopo só entram mediante validação formal.
+- cada usuária deve possuir identificação única no protótipo;
+- cada solicitação deve estar vinculada a uma usuária válida;
+- anexos devem sempre estar associados a uma solicitação;
+- status deve refletir o estado operacional exibido ao usuário interno;
+- conteúdo publicado deve respeitar categoria e estado de publicação;
+- ações relevantes devem aparecer no histórico quando aplicável.
 
-## Regras operacionais
+## Regras de fluxo
 
-- o status de um atendimento deve refletir o estado real da operação;
-- conteúdos só podem ser publicados por perfis autorizados;
-- acessos administrativos devem respeitar perfil e permissão;
-- notificações devem estar associadas a eventos válidos;
-- a exclusão lógica ou arquivamento deve ser preferível à perda de histórico, quando aplicável.
+- não se cria solicitação sem usuária associada;
+- não se anexa mídia sem contexto de solicitação;
+- atualização de status precisa seguir lista de estados válidos;
+- cadastro e edição devem validar campos essenciais;
+- usuários sem perfil adequado não devem ver ações de administração.
 
-## Regras gerenciais
+## Regras de protótipo
 
-- indicadores devem ser extraídos de base confiável;
-- decisões de priorização devem observar o backlog validado;
-- entregas por fase dependem de aceite formal;
-- riscos devem ser revisados periodicamente.
-
----
-
-# 18. Governança do Projeto
-
-## Modelo de governança
-
-- checkpoint semanal;
-- review quinzenal de andamento;
-- backlog priorizado;
-- registro formal de decisões;
-- gestão de mudanças;
-- tratamento contínuo de riscos;
-- validação por marcos.
-
-## Papéis esperados
-
-### CONAF
-- definir prioridades;
-- validar regras de negócio;
-- homologar entregas;
-- indicar responsáveis de contato.
-
-### Equipe de Entrega
-- conduzir arquitetura e desenvolvimento;
-- manter previsibilidade;
-- registrar riscos e desvios;
-- executar testes e suporte inicial.
-
-## Gestão de mudanças
-
-Qualquer solicitação que altere escopo, prazo ou esforço deve seguir fluxo formal de avaliação de impacto.
+- dados podem ser simplificados, mas não incoerentes;
+- telas podem omitir profundidade operacional que não comprometa a narrativa;
+- o backend não precisa refletir toda a operação real, mas deve sustentar a demonstração com consistência.
 
 ---
 
-# 19. Plano de Entrega e Cronograma
+# 17. Plano Técnico e Estratégico de Execução em 15 Dias
 
-## Estratégia de entrega
+A execução será organizada para maximizar percepção de progresso, reduzir risco de integração tardia e concentrar esforço no que efetivamente compõe a experiência demonstrável.
 
-A entrega é organizada em **fases progressivas**, com objetivo claro por etapa e critérios de aceite definidos. Isso reduz risco, melhora previsibilidade e facilita tomada de decisão.
+## Estratégia geral
 
-| Fase | Objetivo | Prazo estimado |
+- primeiros dias dedicados à fundação e design estrutural;
+- miolo do ciclo dedicado à construção das telas e fluxos centrais;
+- backend entra como suporte progressivo, sem travar interface;
+- últimos dias reservados para integração, refinamento, QA e demonstração.
+
+## Cronograma executivo de 15 dias
+
+| Dia | Foco | Entrega esperada |
 |---|---|---|
-| 1 | Fundação técnica, arquitetura, identidade básica e estruturas centrais | 3 semanas + 2 dias |
-| 2 | MVP operacional mobile + painel administrativo base | 5 semanas + 2 dias |
-| 3 | Indicadores, conteúdos, melhorias operacionais e refinamentos | 4 semanas + 2 dias |
-| 4 | Homologação, go live assistido e estabilização inicial | 4 semanas + 2 dias |
+| 1 | Kickoff técnico e consolidação do escopo | mapa de telas, módulos e árvore inicial |
+| 2 | Fundação do repositório e design base | shell do projeto, roteamento, tema e estrutura |
+| 3 | Layout institucional e autenticação | login, layout base, navegação principal |
+| 4 | Dashboard | cards, painel principal, widgets iniciais |
+| 5 | Gestão de usuárias | listagem, filtros, detalhe inicial |
+| 6 | Cadastro e edição de usuárias | formulários e estados visuais |
+| 7 | Solicitações | listagem, criação e detalhe inicial |
+| 8 | Histórico e timeline | vínculo entre usuária, solicitação e histórico |
+| 9 | Mídias e anexos | upload demonstrativo e listagem |
+| 10 | Conteúdo institucional | biblioteca, detalhe e gestão simples |
+| 11 | Backend de suporte | contratos, endpoints e persistência mínima |
+| 12 | Integração frontend-backend | conexão real dos fluxos centrais |
+| 13 | Refino visual e UX | ajustes, consistência, feedbacks e responsividade |
+| 14 | QA e homologação interna | testes de fluxo e correção de falhas |
+| 15 | Preparação de demo | estabilização final, dados de apresentação e roteiro |
 
-## Visão do cronograma
+## Visão estratégica por blocos
+
+### Bloco 1 — Fundação (Dias 1 a 3)
+Objetivo: impedir improviso estrutural e garantir base visual coerente.
+
+### Bloco 2 — Construção central (Dias 4 a 10)
+Objetivo: entregar a maior parte do valor perceptível do protótipo.
+
+### Bloco 3 — Integração e validação (Dias 11 a 15)
+Objetivo: transformar conjunto de telas em produto demonstrável de ponta a ponta.
 
 ```mermaid
 %%{init: {
@@ -935,250 +1050,326 @@ A entrega é organizada em **fases progressivas**, com objetivo claro por etapa 
 'primaryColor':'#22d3ee',
 'primaryTextColor':'#f8fafc',
 'primaryBorderColor':'#39ff14',
-'lineColor':'#a855f7',
+'lineColor':'#c084fc',
 'secondaryColor':'#0f172a',
 'tertiaryColor':'#111827'
 }}}%%
 gantt
-title Roadmap Executivo Terra Conecta - CONAF
-dateFormat YYYY-MM-DD
-axisFormat %d/%m
-section Entregas
-Fase 1 - Fundação                :a1, 2026-04-20, 23d
-Fase 2 - MVP Operacional         :a2, after a1, 37d
-Fase 3 - Refinos e Indicadores   :a3, after a2, 30d
-Fase 4 - Go Live e Estabilização :a4, after a3, 30d
+title Plano Técnico de Execução do Protótipo - 15 dias
+dateFormat  YYYY-MM-DD
+axisFormat  %d/%m
+section Fundação
+Escopo, arquitetura e setup           :a1, 2026-04-20, 3d
+section Frontend Principal
+Layout, dashboard e módulos centrais  :a2, after a1, 7d
+section Integração e Refinamento
+API, integração, QA e demo            :a3, after a2, 5d
 ```
-
-## Forma de entrega por fase
-
-### Fase 1 — Fundação
-- setup da base técnica;
-- arquitetura inicial;
-- autenticação base;
-- persistência inicial;
-- estrutura do painel e mobile;
-- preparação de ambiente.
-
-### Fase 2 — MVP Operacional
-- fluxos principais de uso;
-- atendimento e solicitações;
-- histórico e anexos;
-- gestão de usuárias;
-- operação base;
-- conteúdo inicial.
-
-### Fase 3 — Gestão e Refinamento
-- indicadores;
-- relatórios;
-- melhorias de jornada;
-- ajustes operacionais;
-- revisão de regras e refino de usabilidade.
-
-### Fase 4 — Entrada em Produção
-- homologação final;
-- ajustes críticos;
-- preparação de produção;
-- go live assistido;
-- monitoramento inicial.
 
 ---
 
-# 20. Estratégia de Qualidade, Testes e Homologação
+# 18. Passo a Passo de Montagem do Protótipo
+
+## Etapa 1 — Consolidar escopo real do protótipo
+Definir exatamente:
+- telas obrigatórias;
+- fluxos obrigatórios;
+- dados mínimos necessários;
+- entidades principais;
+- fronteira entre real e simulado.
+
+**Saída esperada:** mapa funcional e navegação fechados.
+
+## Etapa 2 — Criar base do repositório
+Montar monorepo simples com:
+- `apps/web`;
+- `apps/api`;
+- `apps/mobile` como continuidade estrutural;
+- `docs` com decisões iniciais.
+
+**Saída esperada:** projeto inicial executável.
+
+## Etapa 3 — Estruturar frontend base
+Implementar:
+- roteamento;
+- layouts;
+- sidebar;
+- topbar;
+- tema visual;
+- componentes compartilhados;
+- estados globais mínimos.
+
+**Saída esperada:** casca navegável do sistema.
+
+## Etapa 4 — Implementar autenticação de protótipo
+Construir:
+- login;
+- proteção de rotas;
+- sessão local ou integrada;
+- perfil básico autenticado.
+
+**Saída esperada:** acesso controlado ao ambiente interno.
+
+## Etapa 5 — Construir dashboard
+Implementar:
+- KPIs principais;
+- blocos de resumo;
+- lista de atividade recente;
+- atalhos de navegação.
+
+**Saída esperada:** tela inicial forte para demonstração.
+
+## Etapa 6 — Construir módulo de usuárias
+Implementar:
+- listagem;
+- filtros;
+- detalhe;
+- formulário de cadastro e edição;
+- histórico vinculado.
+
+**Saída esperada:** módulo navegável com percepção de operação real.
+
+## Etapa 7 — Construir módulo de solicitações
+Implementar:
+- tabela de solicitações;
+- criação;
+- detalhe;
+- status;
+- timeline.
+
+**Saída esperada:** fluxo operacional central demonstrável.
+
+## Etapa 8 — Construir upload de mídia
+Implementar:
+- seletor de arquivo;
+- submissão;
+- metadados;
+- listagem por solicitação;
+- feedback visual.
+
+**Saída esperada:** demonstração de vínculo entre operação e anexos.
+
+## Etapa 9 — Construir módulo de conteúdo
+Implementar:
+- biblioteca;
+- filtros;
+- detalhe;
+- cadastro simples;
+- publicação.
+
+**Saída esperada:** narrativa institucional mais rica.
+
+## Etapa 10 — Construir backend mínimo
+Implementar:
+- contratos;
+- endpoints principais;
+- persistência controlada;
+- mocks coerentes quando necessário;
+- seed de dados.
+
+**Saída esperada:** frontend conectado sem dependência de gambiarra difusa.
+
+## Etapa 11 — Integrar frontend e backend
+Conectar:
+- autenticação;
+- dashboard;
+- usuárias;
+- solicitações;
+- conteúdo;
+- mídias.
+
+**Saída esperada:** protótipo executável ponta a ponta.
+
+## Etapa 12 — Refinar UX e estabilidade
+Ajustar:
+- loading;
+- estados vazios;
+- mensagens de erro;
+- consistência visual;
+- responsividade principal;
+- dados de demonstração.
+
+**Saída esperada:** produto apresentável.
+
+## Etapa 13 — Testar, corrigir e preparar demo
+Executar:
+- smoke tests;
+- revisão visual;
+- checagem de navegação;
+- roteiro de apresentação;
+- ambiente de demonstração.
+
+**Saída esperada:** entrega final estável e convincente.
+
+---
+
+# 19. Estratégia de Qualidade e Homologação
 
 ## Princípios
 
-- validar profundamente o que sustenta o negócio;
-- testar fluxos críticos antes de cenários periféricos;
-- homologar por fase;
-- evitar entrada em produção sem visibilidade técnica mínima.
+- testar primeiro o que aparece e o que sustenta a narrativa principal;
+- não dispersar esforço em bordas pouco relevantes ao protótipo;
+- homologar fluxo, não apenas tela isolada;
+- validar coerência visual e consistência de dados.
 
-## Tipos de testes previstos
+## Tipos de validação
 
-- testes funcionais;
-- testes de integração;
-- regressão de fluxos principais;
-- smoke tests;
-- testes de upload/anexos;
-- testes de permissão;
-- homologação assistida com a CONAF.
+- teste de navegação principal;
+- teste de login e acesso;
+- teste de formulários críticos;
+- teste de listagem e filtros;
+- teste de detalhe e histórico;
+- teste de upload demonstrativo;
+- teste de integração dos endpoints principais;
+- teste de apresentação assistida.
 
-## Homologação
+## Critérios mínimos de homologação
 
-Cada fase deve possuir:
-- escopo acordado;
-- evidência de funcionamento;
-- validação formal;
-- lista de pendências e ajustes, quando existirem.
-
----
-
-# 21. Operação, Deploy e Sustentação
-
-## Ambientes
-- desenvolvimento;
-- staging;
-- produção.
-
-## Operação prevista
-- logs centralizados;
-- monitoramento de disponibilidade;
-- backup recorrente;
-- acompanhamento pós go live;
-- resposta inicial a incidentes críticos.
-
-## Pipeline de entrega
-- versionamento;
-- revisão de código;
-- build;
-- testes;
-- deploy controlado;
-- validação posterior.
-
-## Sustentação inicial
-A proposta considera um período inicial de acompanhamento do go live para estabilização e correções prioritárias.
+- sistema sobe localmente ou em ambiente de demo com previsibilidade;
+- todas as telas principais estão navegáveis;
+- fluxos centrais não quebram em apresentação;
+- dados estão consistentes com a narrativa do produto;
+- linguagem visual transmite maturidade suficiente.
 
 ---
 
-# 22. Custos Operacionais Estimados
+# 20. Deploy, Operação e Sustentação do Protótipo
 
-Os custos abaixo representam uma **faixa estimada mensal**, compatível com uma operação inicial disciplinada. O valor exato depende de volume de uso, mídia, ambiente contratado e necessidade de observabilidade.
+## Ambientes sugeridos
+- desenvolvimento local;
+- staging de demonstração;
+- opcionalmente produção leve apenas para apresentação.
 
-| Item | Faixa estimada mensal |
-|---|---:|
-| Infra de aplicação | R$ 400 a R$ 800 |
-| Banco de dados | R$ 250 a R$ 500 |
-| Storage de arquivos | R$ 120 a R$ 300 |
-| Monitoramento e logs | R$ 150 a R$ 350 |
-| Backup | R$ 80 a R$ 180 |
-| Serviços auxiliares e contingências | R$ 100 a R$ 250 |
-| **Total médio estimado** | **R$ 1.100 a R$ 2.380 / mês** |
+## Deploy do frontend
+- build versionado;
+- publicação em ambiente web simples;
+- variáveis de ambiente controladas;
+- assets estáticos organizados.
 
-## Leitura executiva dos custos
+## Deploy do backend
+- serviço único;
+- configuração de ambiente mínima;
+- logs básicos;
+- banco simples e seed inicial.
 
-- cenário enxuto: operação inicial com baixo volume;
-- cenário médio: operação com uso recorrente e crescimento controlado;
-- cenário ampliado: mais mídia, maior tráfego e maior demanda de acompanhamento.
-
-> [!NOTE]
-> A proposta comercial de implantação não inclui, por padrão, cobrança mensal de infraestrutura. A operação recorrente deve ser tratada como custo da plataforma em produção.
+## Sustentação do protótipo
+- correções rápidas de apresentação;
+- revisão de dados de demonstração;
+- ajustes de UI pós-homologação;
+- preparação para próxima onda de execução, se aprovada.
 
 ---
 
-# 23. Investimento Comercial
+# 21. Matriz de Estimativa de Custo
 
-# 💎 Investimento Total Proposto: **R$ 30.000,00**
+A matriz abaixo representa uma composição de investimento para entrega do protótipo com padrão técnico elevado, foco forte em frontend, documentação, integração mínima correta e janela de execução intensiva.
 
-## Estrutura de pagamento sugerida
+| Frente | Peso estimado | Faixa de esforço | Valor estimado |
+|---|---:|---:|---:|
+| Descoberta rápida, refinamento e arquitetura | 10% | alta concentração inicial | R$ 6.000 |
+| UX/UI aplicada ao protótipo e design de telas | 18% | crítica para percepção de valor | R$ 10.800 |
+| Frontend React do protótipo | 32% | frente principal da execução | R$ 19.200 |
+| Backend TypeScript e contratos | 16% | suporte funcional e integração | R$ 9.600 |
+| Módulo de mídias, dados e integração | 8% | fluxo demonstrativo essencial | R$ 4.800 |
+| QA, refinamento visual e preparação de demo | 10% | estabilização final | R$ 6.000 |
+| Documentação técnica e handoff | 6% | consolidação de continuidade | R$ 3.600 |
+| **Total estimado** | **100%** |  | **R$ 60.000** |
+
+## Leitura executiva da matriz
+
+- o maior peso está corretamente concentrado em frontend;
+- backend recebe investimento proporcional ao seu papel de sustentação;
+- design, refinamento e demonstração possuem peso relevante porque o protótipo será avaliado principalmente por experiência percebida e clareza visual;
+- documentação entra como mecanismo de continuidade técnica e proteção contra retrabalho.
+
+---
+
+# 22. Investimento Comercial
+
+# 💎 Investimento Total Proposto: **R$ 60.000,00**
+
+## Estrutura sugerida de pagamento
 
 | Marco | Percentual | Valor |
 |---|---:|---:|
-| Assinatura + Kickoff | 40% | R$ 12.000 |
-| Entrega e aceite da Fase 1 | 20% | R$ 6.000 |
-| Entrega e aceite da Fase 2 | 20% | R$ 6.000 |
-| Entrega e aceite final / Go Live | 20% | R$ 6.000 |
+| Assinatura e kickoff técnico | 35% | R$ 21.000 |
+| Entrega da base estrutural e navegação principal | 25% | R$ 15.000 |
+| Entrega dos módulos centrais integrados | 25% | R$ 15.000 |
+| Entrega final, validação e demonstração | 15% | R$ 9.000 |
 
 ## O que o investimento cobre
 
-- planejamento e estruturação da solução;
-- arquitetura e implementação;
-- mobile e painel no escopo definido;
-- backend e persistência;
-- integrações internas necessárias ao escopo;
-- testes e homologação por fase;
-- preparação de produção e acompanhamento inicial.
+- consolidação técnica do protótipo;
+- estruturação arquitetural pragmática;
+- construção de frontend web com foco demonstrativo;
+- backend mínimo funcional em TypeScript;
+- contratos, organização de módulos e base de evolução;
+- documentação técnica;
+- refinamento final para apresentação.
+
+## O que não está incluído
+
+- expansão para produto completo;
+- operação contínua mensal longa;
+- integrações extensas não previstas;
+- escopo adicional fora do protótipo acordado;
+- evolução mobile completa em Flutter nesta janela.
 
 ---
 
-# 24. Premissas Comerciais e de Execução
-
-## Premissas
-- disponibilidade da CONAF para validações e homologações;
-- definição clara de responsáveis pelo lado cliente;
-- aprovação por marcos;
-- estabilidade mínima das prioridades por fase;
-- alterações relevantes tratadas via reavaliação.
-
-## Não incluído no valor base
-- demandas fora do escopo;
-- integrações não previstas;
-- evoluções avançadas;
-- operação contínua mensal de longa duração;
-- licenças ou serviços de terceiros não contemplados.
-
----
-
-# 25. Riscos e Mitigações
-
-## Matriz executiva de risco
+# 23. Riscos e Mitigações
 
 | Risco | Probabilidade | Impacto | Nível | Mitigação |
 |---|---|---|---|---|
-| Crescimento de escopo | Alta | Alto | Crítico | gestão formal de mudanças e congelamento por fase |
-| Atraso em validações da CONAF | Média | Alto | Alto | agenda antecipada e checkpoints obrigatórios |
-| Regras de negócio incompletas | Média | Alto | Alto | refinamento contínuo com responsáveis-chave |
-| Baixa adoção inicial | Média | Alto | Alto | onboarding, comunicação e treinamento |
-| Infra inadequada ao uso real | Baixa | Médio | Moderado | monitoramento e ajuste de capacidade |
-| Dados inconsistentes na origem | Média | Alto | Alto | validação, revisão de cadastro e auditoria |
-| Alterações tardias de prioridade | Média | Médio | Moderado | replanejamento formal e backlog priorizado |
-| Dependência de terceiros | Média | Médio | Moderado | contingência técnica e escolha de serviços maduros |
-| Excesso de anexos / mídia | Média | Médio | Moderado | política de uso e monitoramento de storage |
-| Falhas operacionais pós go live | Baixa | Alto | Moderado | go live assistido e resposta prioritária inicial |
-
-## Leitura de risco por categoria
-
-### Riscos de escopo
-Relacionados a aumento de demandas não previstas, alterações de prioridade e extensão indevida da entrega.
-
-### Riscos de negócio
-Relacionados a baixa adesão, expectativas desalinhadas e regras operacionais insuficientemente definidas.
-
-### Riscos técnicos
-Relacionados a infraestrutura, mídia, performance e manutenção inicial.
-
-### Riscos de governança
-Relacionados a atraso de decisões, homologações tardias e ausência de responsáveis claros.
+| Crescimento de escopo | Alta | Alto | Crítico | congelar telas e fluxos obrigatórios até o Dia 2 |
+| Excesso de backend para um protótipo | Média | Alto | Alto | manter backend como suporte e revisar escopo diariamente |
+| Refinamento visual insuficiente | Média | Alto | Alto | reservar janela explícita de polish nos dias finais |
+| Integração tardia | Média | Alto | Alto | integrar módulos progressivamente, não apenas no fim |
+| Dados incoerentes na demo | Média | Médio | Moderado | preparar seeds e cenários de apresentação |
+| Complexidade estrutural desnecessária | Média | Médio | Moderado | revisar árvore e camadas com critério anti-superengenharia |
+| Baixa previsibilidade em 15 dias | Média | Alto | Alto | quebrar execução por entregas diárias e validar escopo cedo |
 
 > [!IMPORTANT]
-> O risco mais relevante, neste tipo de projeto, não costuma ser tecnologia. É desalinhamento entre escopo, prioridade, governança e expectativa de entrega.
+> Em protótipos curtos, o risco dominante não é falta de tecnologia. É falta de disciplina de escopo combinada com excesso de ambição estrutural.
 
 ---
 
-# 26. Critérios de Sucesso
+# 24. Critérios de Sucesso
 
-A iniciativa será considerada bem-sucedida se, ao final do ciclo proposto, a **CONAF** tiver:
+O protótipo será considerado bem-sucedido se, ao final do ciclo, existir:
 
-- plataforma funcional em produção;
-- fluxos principais digitalizados;
-- histórico estruturado por usuária;
-- painel administrativo utilizável;
-- visão mínima de indicadores;
-- governança operacional mais clara;
-- base tecnológica apta para evolução futura.
+- navegação completa entre módulos principais;
+- dashboard institucional coerente;
+- gestão de usuárias funcional;
+- fluxo de solicitações demonstrável;
+- histórico e mídias integrados de forma crível;
+- conteúdo institucional navegável;
+- base técnica organizada e legível;
+- documentação suficiente para continuidade.
 
 ## Indicadores qualitativos de sucesso
 
-- menor retrabalho;
-- mais previsibilidade;
-- mais rastreabilidade;
-- melhor capacidade de acompanhamento;
-- maior clareza para decisão.
+- boa percepção visual de produto real;
+- entendimento rápido da solução por quem assiste a demo;
+- baixo volume de improviso durante apresentação;
+- clareza estrutural do código;
+- facilidade de evolução para próxima fase.
 
 ---
 
-# 27. Recomendações Finais
+# 25. Recomendações Finais
 
-O **Terra Conecta** apresenta uma combinação sólida entre:
+O melhor caminho para este contexto é tratar o **Terra Conecta** como um **protótipo web de alta qualidade demonstrativa**, com rigor técnico suficiente para não colapsar na continuidade, mas sem transportar o peso de uma plataforma enterprise completa para dentro de uma janela de 15 dias.
 
-- valor institucional;
-- viabilidade financeira;
-- arquitetura correta para o estágio atual;
-- escopo realista;
-- potencial de expansão futura.
+## Síntese de recomendação
 
-## Síntese final
-
-Com investimento de **R$ 30.000,00**, cronograma em fases, governança adequada e disciplina de escopo, o projeto possui condições concretas de gerar resultado real para a **CONAF** e posicionar a operação em novo patamar de maturidade digital.
+- manter o foco principal em frontend;
+- usar backend TypeScript como sustentação mínima correta;
+- preservar arquitetura monolítica modular;
+- evitar qualquer separação ornamental de camadas;
+- construir tree view limpa e previsível;
+- integrar cedo;
+- reservar tempo real para refinamento visual e demo.
 
 > [!IMPORTANT]
-> O sucesso desta proposta não depende de adicionar mais funcionalidades agora. Depende de executar com consistência o que é estruturalmente certo nesta fase: base sólida, boa governança, operação organizada e expansão guiada por uso real.
+> O valor desta entrega não está em simular sofisticação técnica. Está em apresentar um protótipo forte, coerente, navegável, convincente e com base suficiente para virar produto sem reconstrução total.
