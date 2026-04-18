@@ -186,7 +186,7 @@ As decisões deste protótipo partem das seguintes premissas:
 
 ---
 
-# 4. Diretriz Visual Global dos Diagramas Mermaid
+# 4. Diretriz Visual Global dos Diagramas
 
 Todos os diagramas Mermaid deste documento devem seguir uma linguagem visual única, com padrão técnico e institucional consistente.
 
