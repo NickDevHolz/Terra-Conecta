@@ -14,13 +14,13 @@
 </div>
 
 > [!IMPORTANT]
-> Este documento reposiciona a proposta original como um **documento técnico e estratégico para execução de um protótipo web**, com foco em validação rápida, organização arquitetural previsível, forte atenção à experiência de frontend e base suficiente para evolução posterior sem superengenharia.
+> Este documento reposiciona a proposta como um **documento técnico e estratégico para execução de um protótipo web navegável**, com forte ênfase em **frontend de alta fidelidade**, **backend mínimo correto**, **organização arquitetural previsível**, **versionamento disciplinado** e **evolução sustentável sem superengenharia**.
 
 > [!NOTE]
-> O objetivo deste protótipo não é entregar uma plataforma enterprise completa em 15 dias. O objetivo é construir uma **versão navegável, funcional, coerente e tecnicamente sustentável**, capaz de validar jornadas, regras centrais, interface, estrutura de dados e visão operacional.
+> O objetivo do protótipo não é simular a versão enterprise final. O objetivo é construir uma **versão funcional, convincente, tecnicamente coerente e operacionalmente demonstrável**, suficiente para validar jornada, interface, dados, regras centrais, narrativa institucional e viabilidade de evolução.
 
 > [!TIP]
-> Para este contexto, a decisão mais eficiente é concentrar esforço em **frontend de alta fidelidade**, backend mínimo porém correto, contratos estáveis, dados simulados ou parcialmente persistidos e arquitetura modular simples.
+> A estratégia mais eficiente em uma janela curta é concentrar energia em **UX/UI, navegação, estados de tela, design system leve, contratos claros, persistência seletiva, dados de demonstração consistentes e stack com alta velocidade de execução**.
 
 ---
 
@@ -29,71 +29,84 @@
 1. Visão do Protótipo  
 2. Objetivo Estratégico e Técnico  
 3. Premissas de Construção  
-4. Escopo Executivo do Protótipo  
-5. Escopo Funcional do Protótipo  
-6. Fora de Escopo do Protótipo  
-7. Perfis de Usuário e Jornadas  
-8. Diretrizes Arquiteturais  
-9. Arquitetura Recomendada do Protótipo  
-10. Diagramas Técnicos e Fluxos  
-11. Stack Tecnológica  
-12. Tree View do Projeto  
-13. Organização de Responsabilidades por Camada  
-14. Requisitos Funcionais  
-15. Requisitos Não Funcionais  
-16. Regras de Negócio  
-17. Plano Técnico e Estratégico de Execução em 15 Dias  
-18. Passo a Passo de Montagem do Protótipo  
-19. Estratégia de Qualidade e Homologação  
-20. Deploy, Operação e Sustentação do Protótipo  
-21. Matriz de Estimativa de Custo  
-22. Investimento Comercial  
-23. Riscos e Mitigações  
-24. Critérios de Sucesso  
-25. Recomendações Finais
+4. Diretriz Visual Global dos Diagramas Mermaid  
+5. Escopo Executivo do Protótipo  
+6. Escopo Funcional do Protótipo  
+7. Fora de Escopo do Protótipo  
+8. Perfis de Usuário e Jornadas  
+9. Diretrizes Arquiteturais  
+10. Arquitetura Recomendada do Protótipo  
+11. Estratégia de Versionamento e Governança Técnica  
+12. Bibliotecas e Ferramentas Recomendadas  
+13. Diagramas Técnicos e Fluxos  
+14. Stack Tecnológica  
+15. Tree View Completa do Projeto  
+16. Organização de Responsabilidades por Camada  
+17. Matriz de Requisitos Funcionais  
+18. Matriz de Requisitos Não Funcionais  
+19. Matriz de Regras de Negócio  
+20. Regras Operacionais Complementares  
+21. Plano Técnico e Estratégico de Execução em 15 Dias  
+22. Passo a Passo de Montagem do Protótipo  
+23. Estratégia de Qualidade e Homologação  
+24. Deploy, Operação e Sustentação do Protótipo  
+25. Matriz de Estimativa de Custo  
+26. Investimento Comercial  
+27. Riscos e Mitigações  
+28. Critérios de Sucesso  
+29. Recomendações Finais
 
 ---
 
 # 1. Visão do Protótipo
 
-O **Terra Conecta** será tratado, nesta fase, como um **protótipo web de alto valor demonstrativo**, com foco em validar a experiência principal da solução, consolidar a narrativa de produto e estruturar uma base técnica inicial organizada.
+O **Terra Conecta** será conduzido, nesta fase, como um **protótipo web executável de alto valor demonstrativo**, orientado à validação rápida do produto e à apresentação institucional de uma solução com aparência, coerência e comportamento de software real.
 
-O protótipo deverá permitir:
+A proposta do protótipo é:
 
-- demonstrar a proposta de valor da solução de forma tangível;
-- validar jornadas centrais de uso;
-- apresentar uma interface institucional de alto nível;
-- simular uma operação real com consistência visual e funcional;
-- estabelecer uma base técnica inicial sem inflar a arquitetura.
+- materializar a proposta de valor em jornadas navegáveis;
+- validar fluxos críticos de operação;
+- testar entendimento do produto por stakeholders;
+- dar previsibilidade técnica para continuidade;
+- reduzir risco de construção futura baseada apenas em discurso;
+- provar a solução com uma base enxuta, mas organizada.
 
-Neste contexto, o frontend assume papel dominante, porque é nele que a percepção de valor, clareza operacional e maturidade do produto se tornam visíveis já no primeiro ciclo.
+O frontend assume papel principal porque a percepção de maturidade, clareza operacional e potencial de adoção do produto dependerá diretamente da qualidade visual, da consistência dos fluxos e da solidez da experiência demonstrada.
 
 ## Resultado esperado
 
-Ao final dos 15 dias, o protótipo deve ser capaz de demonstrar:
+Ao final dos 15 dias, o protótipo deve demonstrar com consistência:
 
-- acesso e navegação principal;
+- login e entrada institucional;
 - dashboard administrativo;
-- cadastro e consulta de usuárias;
+- gestão de usuárias;
 - abertura e acompanhamento de solicitações;
-- upload e listagem de mídias em fluxo controlado;
+- upload e listagem de mídias;
 - histórico consolidado por usuária;
 - biblioteca de conteúdos;
-- visão institucional coerente e apresentável.
+- segregação mínima de perfis;
+- ambiente tecnicamente legível para continuidade.
 
 ```mermaid
 %%{init: {
 'theme':'dark',
 'themeVariables':{
 'background':'#020617',
+'mainBkg':'#020617',
+'secondBkg':'#0f172a',
+'tertiaryColor':'#111827',
 'primaryColor':'#22d3ee',
 'primaryTextColor':'#f8fafc',
 'primaryBorderColor':'#39ff14',
-'lineColor':'#a855f7',
 'secondaryColor':'#0f172a',
 'secondaryTextColor':'#e2e8f0',
-'tertiaryColor':'#111827',
-'tertiaryTextColor':'#f8fafc'
+'secondaryBorderColor':'#a855f7',
+'lineColor':'#22d3ee',
+'textColor':'#f8fafc',
+'nodeBorder':'#39ff14',
+'clusterBkg':'#020617',
+'clusterBorder':'#a855f7',
+'defaultLinkColor':'#22d3ee'
 }}}%%
 mindmap
 root((🌍 Terra Conecta<br/>Protótipo Web))
@@ -101,19 +114,23 @@ root((🌍 Terra Conecta<br/>Protótipo Web))
     Jornada principal
     Fluxos essenciais
     Regras centrais
-  🖥️ Frontend
+  🖥️ Frontend dominante
     Dashboard
     Gestão
     Conteúdo
     Histórico
-  ⚙️ Backend mínimo
+  ⚙️ Backend mínimo correto
     API REST
-    Contratos
-    Mock + persistência simples
+    Contratos estáveis
+    Persistência seletiva
+  🧭 Organização
+    Monólito modular
+    Baixa complexidade
+    Evolução controlada
   📈 Demonstração
     Navegação real
     Dados consistentes
-    Interface institucional
+    Valor institucional
 ```
 
 ---
@@ -122,266 +139,419 @@ root((🌍 Terra Conecta<br/>Protótipo Web))
 
 ## Objetivo Estratégico
 
-Construir um protótipo web executável que permita validar a proposta de produto, alinhar expectativas, demonstrar valor institucional e reduzir incerteza antes de uma implementação ampliada.
+Construir um protótipo web executável capaz de:
+
+- demonstrar valor de negócio de forma tangível;
+- reduzir incerteza de produto;
+- alinhar expectativa entre visão comercial, institucional e técnica;
+- preparar a solução para uma fase posterior de implementação ampliada.
 
 ## Objetivo Técnico
 
-Implantar uma base técnica modular, simples e previsível, orientada por responsabilidades claras, com backend em TypeScript, frontend web em React, organização preparada para evolução e apoio conceitual de frontend mobile em Flutter para continuidade futura.
+Implantar uma base técnica com as seguintes propriedades:
+
+- simples de construir;
+- simples de manter;
+- simples de entender;
+- modular o bastante para crescer;
+- contida o bastante para não colapsar em 15 dias.
 
 ## Objetivos específicos
 
-- transformar a proposta executiva em artefato técnico executável;
-- priorizar experiência de frontend e clareza de navegação;
-- construir contratos mínimos entre frontend e backend;
-- reduzir risco de retrabalho arquitetural;
-- criar uma árvore de projeto limpa e compreensível;
-- viabilizar demonstração institucional com aparência de produto real.
+- transformar a proposta em artefato navegável e demonstrável;
+- priorizar frontend, UX e consistência visual;
+- estabelecer contratos mínimos entre frontend e backend;
+- registrar estrutura, convenções e decisões para continuidade;
+- usar bibliotecas que acelerem entrega sem gerar dependência tóxica;
+- manter o projeto versionado de forma disciplinada desde o primeiro dia.
 
 ---
 
 # 3. Premissas de Construção
 
-Para manter viabilidade real em 15 dias, o protótipo será guiado pelas premissas abaixo:
+As decisões deste protótipo partem das seguintes premissas:
 
-- foco em fluxos principais, não em cobertura total;
-- frontend com prioridade de acabamento acima de profundidade operacional;
-- backend com escopo controlado e responsabilidade objetiva;
-- persistência simples e seletiva;
-- uso de dados mockados quando isso acelerar validação sem comprometer coerência;
-- autenticação simples, mas consistente com a narrativa do produto;
-- arquitetura monolítica modular, evitando distribuição prematura;
-- código organizado por domínio e responsabilidade;
-- ausência de abstrações ornamentais sem ganho imediato.
+- o prazo é curto e exige foco radical;
+- o frontend é a principal superfície de valor percebido;
+- o backend existe para sustentar a demonstração, não para competir em complexidade;
+- nem tudo precisa ser persistido de forma definitiva nesta fase;
+- mocks são aceitáveis quando reduzem risco sem comprometer coerência;
+- a árvore do projeto deve ser navegável por leitura curta;
+- o time deve conseguir localizar responsabilidades sem “caça ao tesouro” entre arquivos;
+- qualquer abstração só entra se simplificar o presente;
+- microserviços, integrações extensas e orquestrações complexas ficam fora desta etapa.
 
 > [!IMPORTANT]
-> Em protótipo de 15 dias, o maior erro é tentar reproduzir a versão final do produto. O protótipo deve ser fiel ao problema, não maximalista na solução.
+> Em protótipo de ciclo curto, a disciplina de escopo vale mais do que sofisticação arquitetural. O erro estrutural mais comum é inflar backend, separar camadas cedo demais e perder tempo em fundações que não demonstram valor.
 
 ---
 
-# 4. Escopo Executivo do Protótipo
+# 4. Diretriz Visual Global dos Diagramas Mermaid
 
-O protótipo será organizado em três frentes coordenadas.
+Todos os diagramas Mermaid deste documento devem seguir uma linguagem visual única, com padrão técnico e institucional consistente.
+
+## Diretriz obrigatória
+
+- **background sempre totalmente dark**, sem qualquer bloco cinza;
+- **bordas em neon**, com uso intencional de cor para distinguir natureza da etapa;
+- **linhas visíveis, limpas e modernas**;
+- **texto claro e legível**;
+- **sem aparência padrão do Mermaid**;
+- **todas as fases representadas por cores diferentes quando houver sequência de execução**.
+
+## Convenção cromática
+
+| Tipo de fase | Cor principal | Uso |
+|---|---|---|
+| Fundação / Setup | `#22d3ee` | setup, estrutura, base |
+| Construção principal | `#39ff14` | desenvolvimento central |
+| Integração | `#a855f7` | conexão entre módulos |
+| Qualidade / QA | `#f59e0b` | validação, testes, refino |
+| Demonstração / Entrega | `#ec4899` | fechamento, demo, entrega |
+| Persistência / Dados | `#06b6d4` | banco, storage, dados |
+| Segurança / Controle | `#ef4444` | auth, proteção, permissão |
+
+## Template visual padrão Mermaid
 
 ```mermaid
 %%{init: {
 'theme':'dark',
 'themeVariables':{
 'background':'#020617',
-'primaryColor':'#06b6d4',
+'mainBkg':'#020617',
+'secondBkg':'#0f172a',
+'tertiaryColor':'#111827',
+'primaryColor':'#22d3ee',
 'primaryTextColor':'#f8fafc',
-'primaryBorderColor':'#22c55e',
-'lineColor':'#c084fc',
+'primaryBorderColor':'#39ff14',
 'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
+'secondaryTextColor':'#e2e8f0',
+'secondaryBorderColor':'#a855f7',
+'lineColor':'#22d3ee',
+'textColor':'#f8fafc',
+'clusterBkg':'#020617',
+'clusterBorder':'#a855f7',
+'defaultLinkColor':'#22d3ee'
 }}}%%
 flowchart LR
-A[🖥️ Frontend Web React] --> B[⚙️ Backend TypeScript]
-C[📱 Diretriz Mobile Flutter] -. continuidade .-> B
-B --> D[(PostgreSQL opcional)]
-B --> E[(Storage simples)]
-B --> F[Mock services]
-B --> G[Logs básicos]
+A[Fundação] --> B[Construção]
+B --> C[Integração]
+C --> D[Qualidade]
+D --> E[Entrega]
+
+style A fill:#020617,stroke:#22d3ee,stroke-width:3px,color:#f8fafc
+style B fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style C fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style D fill:#020617,stroke:#f59e0b,stroke-width:3px,color:#f8fafc
+style E fill:#020617,stroke:#ec4899,stroke-width:3px,color:#f8fafc
+```
+
+> [!IMPORTANT]
+> A partir deste documento, **todos os Mermaid seguem este padrão visual**, inclusive fluxogramas, diagramas de sequência, arquitetura, jornada, cronograma e integração.
+
+---
+
+# 5. Escopo Executivo do Protótipo
+
+O protótipo será organizado em quatro frentes articuladas:
+
+```mermaid
+%%{init: {
+'theme':'dark',
+'themeVariables':{
+'background':'#020617',
+'mainBkg':'#020617',
+'secondBkg':'#0f172a',
+'tertiaryColor':'#111827',
+'primaryColor':'#22d3ee',
+'primaryTextColor':'#f8fafc',
+'primaryBorderColor':'#39ff14',
+'secondaryColor':'#0f172a',
+'secondaryTextColor':'#e2e8f0',
+'secondaryBorderColor':'#a855f7',
+'lineColor':'#22d3ee',
+'textColor':'#f8fafc',
+'clusterBkg':'#020617',
+'clusterBorder':'#a855f7',
+'defaultLinkColor':'#22d3ee'
+}}}%%
+flowchart LR
+A[🖥️ Frontend Web] --> B[⚙️ Backend API]
+B --> C[(🗄️ Persistência)]
+B --> D[(📦 Storage)]
+A --> E[🎨 Design System]
+B --> F[📋 Contratos]
+G[📱 Continuidade Mobile] -. alinhamento futuro .-> F
+
+style A fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style B fill:#020617,stroke:#22d3ee,stroke-width:3px,color:#f8fafc
+style C fill:#020617,stroke:#06b6d4,stroke-width:3px,color:#f8fafc
+style D fill:#020617,stroke:#06b6d4,stroke-width:3px,color:#f8fafc
+style E fill:#020617,stroke:#ec4899,stroke-width:3px,color:#f8fafc
+style F fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style G fill:#020617,stroke:#f59e0b,stroke-width:3px,color:#f8fafc
 ```
 
 ## Frentes contempladas
 
-### 4.1 Frontend Web de alta fidelidade
-Camada principal do protótipo, responsável por traduzir a experiência de uso, fluxos administrativos, percepção institucional e usabilidade.
+### 5.1 Frontend web de alta fidelidade
+É a frente dominante do protótipo. Concentra:
 
-### 4.2 Backend mínimo funcional
-Camada de suporte com API REST, validações, estruturas de domínio e persistência controlada apenas onde necessário para sustentar a demonstração.
+- navegação;
+- telas;
+- estados;
+- formulários;
+- indicadores;
+- filtros;
+- componentes compartilhados;
+- percepção de produto real.
 
-### 4.3 Diretriz de continuidade mobile
-Estrutura conceitual para futura implementação em Flutter, mantendo alinhamento de design system, contratos e organização de domínio.
+### 5.2 Backend mínimo funcional
+Sustenta o frontend com:
+
+- API REST;
+- autenticação básica;
+- validações;
+- contratos;
+- persistência seletiva;
+- dados agregados para telas principais.
+
+### 5.3 Persistência e storage simplificados
+Inclui apenas o necessário para:
+
+- manter coerência demonstrativa;
+- suportar cadastro, listagem, histórico e anexos;
+- evitar fragilidade operacional durante a demo.
+
+### 5.4 Continuidade estrutural para mobile
+Não é foco da entrega, mas a organização considera reaproveitamento futuro de:
+
+- domínio;
+- contratos;
+- nomenclatura;
+- componentes conceituais;
+- design tokens.
 
 ---
 
-# 5. Escopo Funcional do Protótipo
+# 6. Escopo Funcional do Protótipo
 
-## 5.1 Acesso e identidade
-- tela de login institucional;
-- recuperação simples de acesso;
-- sessão autenticada simulada ou real;
+## 6.1 Acesso e identidade
+- login institucional;
+- sessão autenticada;
+- logout;
+- proteção de rotas;
 - perfil básico do usuário autenticado;
-- logout e proteção de rotas principais.
+- recuperação simples ou simulada de acesso.
 
-## 5.2 Dashboard inicial
-- visão resumida da operação;
-- cards com métricas principais;
-- atalhos para áreas centrais;
-- painel com estado da operação;
-- visão executiva inicial.
+## 6.2 Dashboard inicial
+- indicadores resumidos;
+- cards operacionais;
+- visão executiva da operação;
+- atalhos para módulos;
+- atividade recente.
 
-## 5.3 Gestão de usuárias
-- listagem com filtros básicos;
-- cadastro de usuária;
-- edição simples de dados principais;
+## 6.3 Gestão de usuárias
+- listagem;
+- busca;
+- filtros básicos;
+- cadastro;
+- edição;
 - visualização de perfil;
-- histórico consolidado por usuária.
+- histórico consolidado.
 
-## 5.4 Atendimento e solicitações
+## 6.4 Atendimento e solicitações
 - criação de solicitação;
 - categorização inicial;
-- status operacional;
-- visualização detalhada;
-- acompanhamento por timeline;
-- atualização simples por perfis internos.
+- detalhe da solicitação;
+- atualização de status;
+- timeline operacional;
+- vínculo com mídias.
 
-## 5.5 Mídias e anexos
-- upload controlado de imagem, áudio e vídeo;
-- associação ao registro correto;
-- listagem de anexos por solicitação;
-- visualização de metadados;
-- fluxo demonstrável mesmo com storage simplificado.
+## 6.5 Mídias e anexos
+- upload controlado;
+- associação por solicitação;
+- listagem de anexos;
+- metadados essenciais;
+- visualização segura e demonstrável.
 
-## 5.6 Conteúdo institucional
+## 6.6 Conteúdo institucional
 - listagem de materiais;
-- filtro por categoria;
-- tela de detalhe;
-- cadastro e publicação simples no painel;
-- visual coerente com biblioteca institucional.
+- filtros por categoria;
+- detalhe;
+- criação e edição simples;
+- estado de publicação.
 
-## 5.7 Histórico e rastreabilidade
-- timeline por usuária;
-- visualização de interações relevantes;
-- histórico de solicitações;
-- rastreio de atualizações principais;
-- base para auditoria simples.
+## 6.7 Histórico e rastreabilidade
+- linha do tempo por usuária;
+- registro de eventos relevantes;
+- rastreio básico de alterações;
+- visão consolidada de contexto operacional.
 
-## 5.8 Administração básica
-- perfis de acesso simulados ou iniciais;
-- segregação entre visualização e edição;
-- estrutura de permissões mínima;
-- área de parâmetros iniciais do protótipo.
+## 6.8 Administração básica
+- perfis mínimos;
+- separação entre leitura e edição;
+- parâmetros iniciais do protótipo;
+- controle administrativo elementar.
 
 ---
 
-# 6. Fora de Escopo do Protótipo
+# 7. Fora de Escopo do Protótipo
 
-Itens deliberadamente excluídos desta fase:
+Itens excluídos deliberadamente:
 
-- arquitetura de microserviços;
+- microserviços;
 - mensageria distribuída robusta;
 - BI avançado;
 - analytics preditivo;
-- motores de recomendação;
-- IA generativa embarcada;
-- modo offline complexo;
-- integrações extensas com sistemas terceiros;
-- workflows multiempresa avançados;
-- RBAC sofisticado com matriz granular completa;
-- observabilidade enterprise completa;
-- automações de negócio complexas.
+- IA generativa;
+- recomendação automatizada;
+- offline-first complexo;
+- workflows multiempresa;
+- RBAC granular completo;
+- observabilidade enterprise;
+- integrações extensas com terceiros;
+- automação complexa de negócio;
+- aplicativo mobile entregue nesta fase.
 
 > [!IMPORTANT]
-> O protótipo deve validar valor, não exibir volume técnico artificial.
+> O protótipo deve provar valor e organização. Ele não deve tentar exibir “peso técnico” artificial.
 
 ---
 
-# 7. Perfis de Usuário e Jornadas
+# 8. Perfis de Usuário e Jornadas
 
 ## Perfis principais
 
 ### Gestora
-Acompanha indicadores, vê o estado da operação e acessa relatórios resumidos.
+Responsável por acompanhar visão macro da operação, indicadores resumidos e priorização.
 
 ### Operadora
-Cadastra, consulta, acompanha solicitações, atualiza status e organiza o fluxo operacional.
+Responsável pela execução cotidiana: cadastro, consulta, atualização e organização do fluxo.
 
 ### Administradora
-Configura perfis básicos, revisa consistência do ambiente e supervisiona acessos principais.
+Responsável por acesso, parâmetros básicos, revisão geral do ambiente e consistência operacional.
 
 ### Usuária Final
-Neste protótipo web, sua presença será demonstrada majoritariamente por registros, histórico e fluxos refletidos no painel. A interface mobile permanece como continuidade prevista.
+Não será o foco de interface nesta fase. Sua existência será refletida no sistema por registros, histórico e contexto operacional.
 
-## Jornada macro do protótipo
+## Jornada macro
 
 ```mermaid
 %%{init: {
 'theme':'dark',
 'themeVariables':{
 'background':'#020617',
-'primaryColor':'#0ea5e9',
+'mainBkg':'#020617',
+'secondBkg':'#0f172a',
+'tertiaryColor':'#111827',
+'primaryColor':'#22d3ee',
 'primaryTextColor':'#f8fafc',
-'primaryBorderColor':'#22c55e',
-'lineColor':'#a855f7',
+'primaryBorderColor':'#39ff14',
 'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
+'secondaryTextColor':'#e2e8f0',
+'secondaryBorderColor':'#a855f7',
+'lineColor':'#22d3ee',
+'textColor':'#f8fafc',
+'clusterBkg':'#020617',
+'clusterBorder':'#a855f7',
+'defaultLinkColor':'#22d3ee'
 }}}%%
 flowchart LR
-A[Login] --> B[Dashboard]
-B --> C[Gestão de usuárias]
-B --> D[Solicitações]
-B --> E[Conteúdo]
-D --> F[Detalhe da solicitação]
-F --> G[Upload de mídia]
-F --> H[Atualização de status]
-C --> I[Perfil da usuária]
-I --> J[Histórico consolidado]
+A[🔐 Login] --> B[📊 Dashboard]
+B --> C[👤 Gestão de usuárias]
+B --> D[📌 Solicitações]
+B --> E[📚 Conteúdo]
+D --> F[📝 Detalhe da solicitação]
+F --> G[📎 Upload de mídia]
+F --> H[🔄 Atualização de status]
+C --> I[🧾 Perfil da usuária]
+I --> J[🕘 Histórico consolidado]
+
+style A fill:#020617,stroke:#ef4444,stroke-width:3px,color:#f8fafc
+style B fill:#020617,stroke:#22d3ee,stroke-width:3px,color:#f8fafc
+style C fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style D fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style E fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style F fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style G fill:#020617,stroke:#06b6d4,stroke-width:3px,color:#f8fafc
+style H fill:#020617,stroke:#f59e0b,stroke-width:3px,color:#f8fafc
+style I fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style J fill:#020617,stroke:#ec4899,stroke-width:3px,color:#f8fafc
 ```
 
 ---
 
-# 8. Diretrizes Arquiteturais
+# 9. Diretrizes Arquiteturais
 
-A arquitetura deve seguir princípios de execução enxuta:
+A arquitetura recomendada deve ser julgada por quatro critérios simultâneos:
 
-- monólito modular previsível;
-- fronteiras simples entre módulos;
-- contratos explícitos;
-- baixa navegação mental entre arquivos;
-- responsabilidade clara por camada;
-- backend sustentando o frontend, não competindo com ele em complexidade;
-- organização para evolução sem antecipar extrações.
+1. **facilidade de construção**;  
+2. **facilidade de manutenção**;  
+3. **facilidade de entendimento**;  
+4. **capacidade de evolução controlada**.  
 
-## Princípios de decisão
+## Princípios orientadores
 
-### Simplicidade operacional
-Cada módulo deve ser compreendido com leitura curta e fluxo visível.
+### Monólito modular previsível
+Tudo em um único sistema por aplicação principal, com separação por módulo funcional, evitando distribuição prematura.
 
-### Modularidade pragmática
-Separar por domínio apenas quando isso melhora clareza, não por gosto arquitetural.
-
-### Frontend-first no protótipo
-A maior energia deve estar em telas, estados, componentes, navegação e consistência visual.
+### Fronteiras simples
+Cada módulo deve ser localizável por domínio, com baixo custo cognitivo de navegação.
 
 ### Backend como sustentação
-A API precisa ser correta, pequena e estável. Não deve inflar a solução.
+A API deve servir o frontend com objetividade, sem introduzir arquitetura ornamental.
 
-### Evolução controlada
-A base deve aceitar continuidade futura, mas sem introduzir camadas abstratas não utilizadas agora.
+### Fluxo visível
+O leitor deve conseguir entender a execução principal com pouco salto entre arquivos.
+
+### Separação apenas quando útil
+DAO persiste. Service orquestra o caso de uso. Controller expõe o contrato. Shared só abriga reutilização real.
+
+### Evolução sem antecipação excessiva
+A estrutura deve permitir crescer, mas não deve cobrar complexidade agora para um futuro hipotético.
+
+## Resultado arquitetural desejado
+
+Uma base em que:
+
+- novo desenvolvedor entenda a árvore rapidamente;
+- ajustes de tela não exijam reinterpretação do sistema inteiro;
+- contratos entre frontend e backend sejam evidentes;
+- os módulos possam crescer internamente sem reescrever o projeto.
 
 ---
 
-# 9. Arquitetura Recomendada do Protótipo
+# 10. Arquitetura Recomendada do Protótipo
 
 ## Escolha arquitetural
 
-A recomendação é um **monólito modular com frontend desacoplado**, composto por:
-
-- frontend web React como núcleo demonstrativo;
-- backend TypeScript com API REST simples;
-- persistência seletiva;
-- organização por domínios funcionais;
-- design system leve e reutilizável;
-- possibilidade futura de reaproveitar contratos e modelo em Flutter.
+A recomendação é um **monólito modular com frontend desacoplado e backend API simples**, organizado para alto entendimento operacional.
 
 ```mermaid
 %%{init: {
 'theme':'dark',
 'themeVariables':{
 'background':'#020617',
+'mainBkg':'#020617',
+'secondBkg':'#0f172a',
+'tertiaryColor':'#111827',
 'primaryColor':'#22d3ee',
 'primaryTextColor':'#f8fafc',
 'primaryBorderColor':'#39ff14',
-'lineColor':'#c084fc',
 'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
+'secondaryTextColor':'#e2e8f0',
+'secondaryBorderColor':'#a855f7',
+'lineColor':'#22d3ee',
+'textColor':'#f8fafc',
+'clusterBkg':'#020617',
+'clusterBorder':'#a855f7',
+'defaultLinkColor':'#22d3ee'
 }}}%%
 flowchart TB
-subgraph Frontend[Frontend Web - React]
+subgraph FE[🖥️ Frontend Web — React]
 A[App Shell]
-B[Auth Pages]
+B[Auth]
 C[Dashboard]
 D[Usuárias]
 E[Solicitações]
@@ -390,22 +560,23 @@ G[Histórico]
 H[UI Shared]
 end
 
-subgraph Backend[Backend API - TypeScript]
-I[HTTP API]
+subgraph API[⚙️ Backend API — TypeScript]
+I[HTTP Layer]
 J[Auth Module]
 K[Users Module]
 L[Requests Module]
 M[Content Module]
 N[Media Module]
 O[Audit Module]
-P[Shared]
+P[Shared Kernel mínimo]
 end
 
-subgraph Infra[Infra mínima]
-Q[(PostgreSQL ou SQLite em dev)]
-R[(Object Storage local/S3 compatível)]
+subgraph INFRA[🧱 Infra mínima]
+Q[(PostgreSQL)]
+R[(Object Storage)]
 S[Logger]
 T[Env Config]
+U[Seed / Mock Data]
 end
 
 A --> I
@@ -424,114 +595,407 @@ I --> O
 K --> Q
 L --> Q
 M --> Q
+O --> Q
 N --> R
 I --> S
 I --> T
+K --> U
+L --> U
+M --> U
+
+style A fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style B fill:#020617,stroke:#ef4444,stroke-width:3px,color:#f8fafc
+style C fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style D fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style E fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style F fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style G fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style H fill:#020617,stroke:#ec4899,stroke-width:3px,color:#f8fafc
+style I fill:#020617,stroke:#22d3ee,stroke-width:3px,color:#f8fafc
+style J fill:#020617,stroke:#ef4444,stroke-width:3px,color:#f8fafc
+style K fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style L fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style M fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style N fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style O fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style P fill:#020617,stroke:#f59e0b,stroke-width:3px,color:#f8fafc
+style Q fill:#020617,stroke:#06b6d4,stroke-width:3px,color:#f8fafc
+style R fill:#020617,stroke:#06b6d4,stroke-width:3px,color:#f8fafc
+style S fill:#020617,stroke:#f59e0b,stroke-width:3px,color:#f8fafc
+style T fill:#020617,stroke:#f59e0b,stroke-width:3px,color:#f8fafc
+style U fill:#020617,stroke:#ec4899,stroke-width:3px,color:#f8fafc
 ```
 
-## Racional
+## Racional técnico
 
-Essa composição permite:
+Essa arquitetura foi escolhida porque:
 
-- entrega rápida;
-- leitura arquitetural simples;
-- boa experiência demonstrativa;
-- sustentação mínima técnica;
-- futura continuidade sem retrabalho estrutural grave.
+- reduz atrito de construção;
+- evita separações prematuras;
+- simplifica onboarding;
+- mantém backend legível;
+- suporta frontend com contratos claros;
+- aceita futura extração apenas se o crescimento justificar.
+
+## Decisão de organização
+
+### Frontend
+Modular por domínio funcional, com shared apenas para:
+- componentes realmente reutilizáveis;
+- hooks genéricos;
+- utilidades de interface;
+- tokens visuais.
+
+### Backend
+Modular por domínio com convenção curta:
+- `controller` expõe;
+- `service` coordena;
+- `dao` persiste;
+- `contracts` descrevem entrada/saída.
+
+### Mobile
+Permanece como continuidade estrutural e documental, sem diluir o foco da entrega atual.
 
 ---
 
-# 10. Diagramas Técnicos e Fluxos
+# 11. Estratégia de Versionamento e Governança Técnica
 
-## 10.1 Fluxo de autenticação e entrada
+O protótipo deve nascer com disciplina de versionamento, mesmo em uma janela curta. Isso reduz retrabalho, confusão em homologação e perda de rastreabilidade.
+
+## Estratégia recomendada
+
+### Repositório
+Monorepo com workspaces, permitindo:
+- versionamento centralizado;
+- compartilhamento de scripts;
+- padronização de lint, build e CI;
+- organização unificada do protótipo.
+
+### Branching
+Modelo simples e eficaz:
+
+- `main` → sempre estável e demonstrável;
+- `develop` → integração contínua diária, se necessário;
+- `feat/...` → uma fatia funcional por branch;
+- `fix/...` → correções específicas;
+- `docs/...` → documentação e decisões arquiteturais;
+- `refactor/...` → ajustes internos sem alteração funcional.
+
+### Convenção de nomes
+Exemplos:
+- `feat/auth-foundation`
+- `feat/dashboard-overview`
+- `feat/users-management`
+- `feat/requests-flow`
+- `feat/media-upload`
+- `feat/content-library`
+- `fix/request-status-flow`
+- `docs/prototype-architecture`
+- `refactor/web-shared-components`
+
+### Commits
+Adotar Conventional Commits:
+
+- `feat(web): add users list page`
+- `feat(api): implement request creation endpoint`
+- `fix(web): correct request status badge mapping`
+- `docs(architecture): describe prototype module boundaries`
+- `refactor(api): simplify users service flow`
+- `chore(repo): configure pnpm workspace and turbo`
+
+### Tags e releases
+Para demo e checkpoints executivos:
+
+- `v0.1.0` — fundação pronta
+- `v0.2.0` — frontend base navegável
+- `v0.3.0` — módulos centrais integrados
+- `v0.4.0` — demo candidate
+- `v1.0.0-prototype` — entrega final do protótipo
+
+### Pull requests
+Cada PR deve ter:
+- escopo pequeno;
+- propósito único;
+- descrição objetiva;
+- imagens ou vídeo quando alterar UI;
+- checklist de validação;
+- impacto explícito no fluxo demonstrável.
+
+## Governança mínima de qualidade
+
+- lint obrigatório;
+- typecheck obrigatório;
+- build do web e API sem erro;
+- smoke test dos fluxos principais antes de merge em `main`;
+- revisão do impacto na demo antes de aceitar mudanças grandes.
+
+> [!IMPORTANT]
+> Em protótipos curtos, versionamento correto não é burocracia. É mecanismo de controle de risco.
+
+---
+
+# 12. Bibliotecas e Ferramentas Recomendadas
+
+A seleção abaixo privilegia **velocidade de desenvolvimento**, **previsibilidade**, **boa manutenção** e **baixo atrito de onboarding**.
+
+## Frontend web
+
+### Base
+- **React**
+- **TypeScript**
+- **Vite**
+
+### Roteamento
+- **React Router**
+
+### Data fetching e cache
+- **TanStack Query**
+
+### Formulários
+- **React Hook Form**
+- **Zod**
+- **@hookform/resolvers**
+
+### UI / componentes
+- **Tailwind CSS**
+- **shadcn/ui**
+- **Radix UI**
+- **Lucide React**
+
+### Tabelas e grids
+- **TanStack Table**
+
+### Gráficos
+- **Recharts**
+
+### Estado global leve
+- **Zustand**
+
+### Upload e drag and drop
+- **react-dropzone**
+
+### Datas e formatação
+- **date-fns**
+
+### Feedback visual
+- **Sonner** ou **react-hot-toast**
+
+### Qualidade de interface
+- **clsx**
+- **tailwind-merge**
+- **class-variance-authority**
+
+## Backend API
+
+### Base
+- **Node.js**
+- **TypeScript**
+- **NestJS**
+
+### Validação
+- **Zod** ou **class-validator** + **class-transformer**
+- preferência prática: manter um padrão só por projeto
+
+### Banco
+- **PostgreSQL**
+
+### ORM / Query builder
+Escolha recomendada para protótipo de manutenção simples:
+- **Prisma** para produtividade e legibilidade
+
+Alternativa:
+- **Kysely** se houver preferência por controle SQL tipado
+
+### Upload / storage
+- **Multer** para entrada de arquivos
+- SDK compatível com **S3** ou storage local simples
+
+### Auth
+- **JWT**
+- **Passport** apenas se realmente simplificar a implementação no contexto NestJS
+
+### Logging
+- **Pino** ou logger nativo do NestJS com organização simples
+
+### Documentação técnica de API
+- **Swagger / OpenAPI** para apoio interno e homologação
+
+## Repositório e automação
+
+- **pnpm**
+- **Turbo** para tasks no monorepo
+- **ESLint**
+- **Prettier**
+- **Husky**
+- **lint-staged**
+- **Commitlint**
+- **GitHub Actions**
+
+## Mobile de continuidade
+
+- **Flutter**
+- **Dart**
+- apenas como trilha futura, sem peso na entrega atual
+
+## Critério de uso de bibliotecas
+
+Biblioteca entra quando:
+- acelera visivelmente;
+- reduz código repetitivo;
+- melhora legibilidade;
+- tem boa adoção e documentação;
+- não impõe arquitetura acima do necessário.
+
+Biblioteca não entra quando:
+- substitui simplicidade por moda;
+- exige curva desproporcional;
+- cria dependência estrutural sem benefício imediato.
+
+---
+
+# 13. Diagramas Técnicos e Fluxos
+
+## 13.1 Fluxo de autenticação e entrada
 
 ```mermaid
 %%{init: {
 'theme':'dark',
 'themeVariables':{
 'background':'#020617',
-'primaryColor':'#06b6d4',
+'mainBkg':'#020617',
+'secondBkg':'#0f172a',
+'tertiaryColor':'#111827',
+'primaryColor':'#22d3ee',
 'primaryTextColor':'#f8fafc',
-'primaryBorderColor':'#22c55e',
-'lineColor':'#a855f7',
+'primaryBorderColor':'#39ff14',
 'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
+'secondaryTextColor':'#e2e8f0',
+'secondaryBorderColor':'#a855f7',
+'lineColor':'#22d3ee',
+'textColor':'#f8fafc',
+'clusterBkg':'#020617',
+'clusterBorder':'#a855f7',
+'defaultLinkColor':'#22d3ee'
 }}}%%
 sequenceDiagram
 participant U as Usuário Interno
 participant W as React Web
-participant A as API TypeScript
+participant A as API
 participant D as Dados
 
-U->>W: Informa credenciais
+U->>W: Informar credenciais
 W->>A: POST /auth/login
-A->>D: Valida usuário
-D-->>A: Usuário válido
-A-->>W: Sessão / token
+A->>D: Validar usuário e perfil
+D-->>A: Usuário autorizado
+A-->>W: Token / sessão
 W-->>U: Acesso ao dashboard
 ```
 
-## 10.2 Fluxo de gestão de usuárias
+## 13.2 Fluxo de gestão de usuárias
 
 ```mermaid
 %%{init: {
 'theme':'dark',
 'themeVariables':{
 'background':'#020617',
+'mainBkg':'#020617',
+'secondBkg':'#0f172a',
+'tertiaryColor':'#111827',
 'primaryColor':'#22d3ee',
 'primaryTextColor':'#f8fafc',
 'primaryBorderColor':'#39ff14',
-'lineColor':'#c084fc',
 'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
+'secondaryTextColor':'#e2e8f0',
+'secondaryBorderColor':'#a855f7',
+'lineColor':'#22d3ee',
+'textColor':'#f8fafc',
+'clusterBkg':'#020617',
+'clusterBorder':'#a855f7',
+'defaultLinkColor':'#22d3ee'
 }}}%%
 flowchart LR
-A[Listagem de usuárias] --> B[Filtros]
-B --> C[Seleção da usuária]
+A[Listagem] --> B[Filtro e busca]
+B --> C[Seleção]
 C --> D[Perfil detalhado]
 D --> E[Histórico]
 D --> F[Solicitações vinculadas]
-D --> G[Edição de dados básicos]
+D --> G[Edição]
+G --> H[Persistência]
+
+style A fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style B fill:#020617,stroke:#22d3ee,stroke-width:3px,color:#f8fafc
+style C fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style D fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style E fill:#020617,stroke:#ec4899,stroke-width:3px,color:#f8fafc
+style F fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style G fill:#020617,stroke:#f59e0b,stroke-width:3px,color:#f8fafc
+style H fill:#020617,stroke:#06b6d4,stroke-width:3px,color:#f8fafc
 ```
 
-## 10.3 Fluxo de solicitação e atualização operacional
+## 13.3 Fluxo de solicitação e atualização operacional
 
 ```mermaid
 %%{init: {
 'theme':'dark',
 'themeVariables':{
 'background':'#020617',
-'primaryColor':'#0ea5e9',
-'primaryTextColor':'#f8fafc',
-'primaryBorderColor':'#22c55e',
-'lineColor':'#a855f7',
-'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
-}}}%%
-flowchart TB
-A[Nova solicitação] --> B[Definição de categoria]
-B --> C[Registro inicial]
-C --> D[Status aberto]
-D --> E[Anexar mídia]
-E --> F[Atualização operacional]
-F --> G[Status em andamento]
-G --> H[Fechamento demonstrativo]
-H --> I[Histórico consolidado]
-```
-
-## 10.4 Fluxo técnico de upload de mídias
-
-```mermaid
-%%{init: {
-'theme':'dark',
-'themeVariables':{
-'background':'#020617',
+'mainBkg':'#020617',
+'secondBkg':'#0f172a',
+'tertiaryColor':'#111827',
 'primaryColor':'#22d3ee',
 'primaryTextColor':'#f8fafc',
 'primaryBorderColor':'#39ff14',
-'lineColor':'#a855f7',
 'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
+'secondaryTextColor':'#e2e8f0',
+'secondaryBorderColor':'#a855f7',
+'lineColor':'#22d3ee',
+'textColor':'#f8fafc',
+'clusterBkg':'#020617',
+'clusterBorder':'#a855f7',
+'defaultLinkColor':'#22d3ee'
+}}}%%
+flowchart TB
+A[Nova solicitação] --> B[Categoria]
+B --> C[Registro inicial]
+C --> D[Status aberto]
+D --> E[Anexar mídia]
+E --> F[Atualizar operação]
+F --> G[Em andamento]
+G --> H[Fechamento demonstrativo]
+H --> I[Histórico consolidado]
+
+style A fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style B fill:#020617,stroke:#22d3ee,stroke-width:3px,color:#f8fafc
+style C fill:#020617,stroke:#06b6d4,stroke-width:3px,color:#f8fafc
+style D fill:#020617,stroke:#f59e0b,stroke-width:3px,color:#f8fafc
+style E fill:#020617,stroke:#06b6d4,stroke-width:3px,color:#f8fafc
+style F fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style G fill:#020617,stroke:#f59e0b,stroke-width:3px,color:#f8fafc
+style H fill:#020617,stroke:#ec4899,stroke-width:3px,color:#f8fafc
+style I fill:#020617,stroke:#ec4899,stroke-width:3px,color:#f8fafc
+```
+
+## 13.4 Fluxo técnico de upload de mídias
+
+```mermaid
+%%{init: {
+'theme':'dark',
+'themeVariables':{
+'background':'#020617',
+'mainBkg':'#020617',
+'secondBkg':'#0f172a',
+'tertiaryColor':'#111827',
+'primaryColor':'#22d3ee',
+'primaryTextColor':'#f8fafc',
+'primaryBorderColor':'#39ff14',
+'secondaryColor':'#0f172a',
+'secondaryTextColor':'#e2e8f0',
+'secondaryBorderColor':'#a855f7',
+'lineColor':'#22d3ee',
+'textColor':'#f8fafc',
+'clusterBkg':'#020617',
+'clusterBorder':'#a855f7',
+'defaultLinkColor':'#22d3ee'
 }}}%%
 sequenceDiagram
 participant R as React App
@@ -539,146 +1003,185 @@ participant API as Backend API
 participant ST as Storage
 participant DB as Banco
 
-R->>API: Solicita upload
-API->>ST: Persiste arquivo
-ST-->>API: URL / chave
-API->>DB: Salva metadados
-DB-->>API: Registro criado
-API-->>R: Resposta com anexo vinculado
+R->>API: Enviar arquivo
+API->>ST: Persistir binário
+ST-->>API: Chave / URL
+API->>DB: Salvar metadados
+DB-->>API: Registro do anexo
+API-->>R: Resposta do upload
 ```
 
-## 10.5 Fluxo de publicação de conteúdo
+## 13.5 Fluxo de publicação de conteúdo
 
 ```mermaid
 %%{init: {
 'theme':'dark',
 'themeVariables':{
 'background':'#020617',
-'primaryColor':'#06efff',
-'primaryTextColor':'#f8fafc',
-'primaryBorderColor':'#22c55e',
-'lineColor':'#c084fc',
-'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
-}}}%%
-flowchart LR
-A[Admin acessa conteúdo] --> B[Cria ou edita material]
-B --> C[Valida categoria]
-C --> D[Publica]
-D --> E[Listagem atualizada]
-E --> F[Consulta no frontend]
-```
-
-## 10.6 Fluxo de entrega do protótipo em 15 dias
-
-```mermaid
-%%{init: {
-'theme':'dark',
-'themeVariables':{
-'background':'#020617',
-'primaryColor':'#0ea5e9',
+'mainBkg':'#020617',
+'secondBkg':'#0f172a',
+'tertiaryColor':'#111827',
+'primaryColor':'#22d3ee',
 'primaryTextColor':'#f8fafc',
 'primaryBorderColor':'#39ff14',
-'lineColor':'#a855f7',
 'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
+'secondaryTextColor':'#e2e8f0',
+'secondaryBorderColor':'#a855f7',
+'lineColor':'#22d3ee',
+'textColor':'#f8fafc',
+'clusterBkg':'#020617',
+'clusterBorder':'#a855f7',
+'defaultLinkColor':'#22d3ee'
 }}}%%
 flowchart LR
-A[Dia 1-2
-Fundação] --> B[Dia 3-5
-UI Base + Navegação]
-B --> C[Dia 6-8
-Módulos centrais]
-C --> D[Dia 9-11
-Integração e refinamento]
-D --> E[Dia 12-13
-Homologação interna]
-E --> F[Dia 14-15
-Ajustes e demonstração]
+A[Criação ou edição] --> B[Validação]
+B --> C[Rascunho]
+C --> D[Publicação]
+D --> E[Listagem atualizada]
+E --> F[Consulta no frontend]
+
+style A fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style B fill:#020617,stroke:#22d3ee,stroke-width:3px,color:#f8fafc
+style C fill:#020617,stroke:#f59e0b,stroke-width:3px,color:#f8fafc
+style D fill:#020617,stroke:#ec4899,stroke-width:3px,color:#f8fafc
+style E fill:#020617,stroke:#06b6d4,stroke-width:3px,color:#f8fafc
+style F fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+```
+
+## 13.6 Fluxo de entrega em 15 dias
+
+```mermaid
+%%{init: {
+'theme':'dark',
+'themeVariables':{
+'background':'#020617',
+'mainBkg':'#020617',
+'secondBkg':'#0f172a',
+'tertiaryColor':'#111827',
+'primaryColor':'#22d3ee',
+'primaryTextColor':'#f8fafc',
+'primaryBorderColor':'#39ff14',
+'secondaryColor':'#0f172a',
+'secondaryTextColor':'#e2e8f0',
+'secondaryBorderColor':'#a855f7',
+'lineColor':'#22d3ee',
+'textColor':'#f8fafc',
+'clusterBkg':'#020617',
+'clusterBorder':'#a855f7',
+'defaultLinkColor':'#22d3ee'
+}}}%%
+flowchart LR
+A[Dia 1-2<br/>Fundação] --> B[Dia 3-5<br/>UI Base]
+B --> C[Dia 6-8<br/>Módulos Centrais]
+C --> D[Dia 9-11<br/>Integração]
+D --> E[Dia 12-13<br/>Qualidade]
+E --> F[Dia 14-15<br/>Demo]
+
+style A fill:#020617,stroke:#22d3ee,stroke-width:3px,color:#f8fafc
+style B fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style C fill:#020617,stroke:#39ff14,stroke-width:3px,color:#f8fafc
+style D fill:#020617,stroke:#a855f7,stroke-width:3px,color:#f8fafc
+style E fill:#020617,stroke:#f59e0b,stroke-width:3px,color:#f8fafc
+style F fill:#020617,stroke:#ec4899,stroke-width:3px,color:#f8fafc
 ```
 
 ---
 
-# 11. Stack Tecnológica
+# 14. Stack Tecnológica
 
-## Frontend Web
-**React + TypeScript**
-
-Motivos:
-- alta produtividade para interfaces administrativas;
-- excelente aderência a prototipação navegável;
-- bom ecossistema para tabelas, formulários e dashboards;
-- facilidade de componentização;
-- forte compatibilidade com design system.
-
-## Mobile de continuidade
-**Flutter**
+## Frontend web
+**React + TypeScript + Vite**
 
 Motivos:
-- preparação para evolução posterior do canal mobile;
-- boa aderência a interface orientada a jornada;
-- compartilhamento conceitual de design e contratos.
+- velocidade de setup;
+- ótimo ecossistema;
+- excelente aderência para painéis administrativos;
+- componentização rápida;
+- ótima integração com bibliotecas modernas.
 
 ## Backend
-**TypeScript com NestJS ou estrutura HTTP modular equivalente**
+**Node.js + TypeScript + NestJS**
 
 Motivos:
-- contratos claros;
 - organização modular previsível;
-- boa manutenção em time pequeno;
-- forte aderência a APIs institucionais.
+- DI simples para APIs institucionais;
+- facilidade de manutenção;
+- forte aderência para times TypeScript.
 
 ## Banco de dados
 **PostgreSQL**
 
-Para o protótipo, pode ser substituído localmente por opção simplificada em desenvolvimento, desde que contratos e estrutura de domínio permaneçam coerentes.
+Motivos:
+- confiável;
+- amplamente conhecido;
+- suficiente para a modelagem do protótipo e continuidade futura.
+
+## Persistência
+**Prisma** como recomendação pragmática para o protótipo.
 
 ## Storage
-**Object Storage compatível com S3** ou solução local equivalente para demonstração.
+**S3 compatível** ou storage local equivalente para demo.
 
-## UI e estilo
-- design tokens simples;
-- componentes reutilizáveis;
-- paleta visual consistente;
-- foco em telas administrativas limpas e legíveis.
+## Mobile de continuidade
+**Flutter**
+
+Mantido como trilha de evolução, não como escopo executável da janela atual.
 
 ---
 
-# 12. Tree View do Projeto
+# 15. Tree View Completa do Projeto
 
-Abaixo, uma organização pragmática, modular, monolítica e previsível, com foco em responsabilidade clara e baixa sobrecarga cognitiva.
+A tree view abaixo foi desenhada para ser:
+
+- pragmática;
+- modular;
+- fácil de manter;
+- fácil de entender;
+- direta quanto à responsabilidade;
+- sem camadas ornamentais.
 
 ```text
 terra-conecta/
 ├── apps/
 │   ├── web/
 │   │   ├── public/
-│   │   │   └── favicon.ico
+│   │   │   ├── favicon.ico
+│   │   │   ├── manifest.json
+│   │   │   └── robots.txt
 │   │   └── src/
 │   │       ├── app/
 │   │       │   ├── router/
 │   │       │   │   ├── index.tsx
 │   │       │   │   ├── protected-route.tsx
+│   │       │   │   ├── guest-route.tsx
 │   │       │   │   └── route-definitions.ts
 │   │       │   ├── providers/
 │   │       │   │   ├── auth-provider.tsx
 │   │       │   │   ├── query-provider.tsx
-│   │       │   │   └── theme-provider.tsx
+│   │       │   │   ├── theme-provider.tsx
+│   │       │   │   └── toast-provider.tsx
 │   │       │   ├── layouts/
 │   │       │   │   ├── app-layout.tsx
 │   │       │   │   ├── auth-layout.tsx
 │   │       │   │   └── dashboard-layout.tsx
-│   │       │   └── store/
-│   │       │       └── session-store.ts
+│   │       │   ├── store/
+│   │       │   │   ├── session-store.ts
+│   │       │   │   └── ui-store.ts
+│   │       │   └── config/
+│   │       │       ├── env.ts
+│   │       │       └── navigation.ts
 │   │       ├── modules/
 │   │       │   ├── auth/
 │   │       │   │   ├── pages/
 │   │       │   │   │   ├── login-page.tsx
 │   │       │   │   │   └── forgot-password-page.tsx
 │   │       │   │   ├── components/
-│   │       │   │   │   └── login-form.tsx
+│   │       │   │   │   ├── login-form.tsx
+│   │       │   │   │   └── auth-hero.tsx
 │   │       │   │   ├── services/
 │   │       │   │   │   └── auth-api.ts
+│   │       │   │   ├── hooks/
+│   │       │   │   │   └── use-login.ts
 │   │       │   │   └── model/
 │   │       │   │       └── auth.types.ts
 │   │       │   ├── dashboard/
@@ -687,9 +1190,13 @@ terra-conecta/
 │   │       │   │   ├── components/
 │   │       │   │   │   ├── metrics-cards.tsx
 │   │       │   │   │   ├── status-panel.tsx
-│   │       │   │   │   └── recent-activity.tsx
-│   │       │   │   └── services/
-│   │       │   │       └── dashboard-api.ts
+│   │       │   │   │   ├── recent-activity.tsx
+│   │       │   │   │   ├── dashboard-chart.tsx
+│   │       │   │   │   └── quick-actions.tsx
+│   │       │   │   ├── services/
+│   │       │   │   │   └── dashboard-api.ts
+│   │       │   │   └── model/
+│   │       │   │       └── dashboard.types.ts
 │   │       │   ├── users/
 │   │       │   │   ├── pages/
 │   │       │   │   │   ├── users-list-page.tsx
@@ -699,9 +1206,13 @@ terra-conecta/
 │   │       │   │   │   ├── users-table.tsx
 │   │       │   │   │   ├── user-summary-card.tsx
 │   │       │   │   │   ├── user-history-timeline.tsx
-│   │       │   │   │   └── user-form.tsx
+│   │       │   │   │   ├── user-form.tsx
+│   │       │   │   │   └── user-status-badge.tsx
 │   │       │   │   ├── services/
 │   │       │   │   │   └── users-api.ts
+│   │       │   │   ├── hooks/
+│   │       │   │   │   ├── use-users-list.ts
+│   │       │   │   │   └── use-user-details.ts
 │   │       │   │   └── model/
 │   │       │   │       └── user.types.ts
 │   │       │   ├── requests/
@@ -714,9 +1225,14 @@ terra-conecta/
 │   │       │   │   │   ├── request-status-badge.tsx
 │   │       │   │   │   ├── request-timeline.tsx
 │   │       │   │   │   ├── request-form.tsx
+│   │       │   │   │   ├── request-summary-card.tsx
 │   │       │   │   │   └── media-upload-panel.tsx
 │   │       │   │   ├── services/
 │   │       │   │   │   └── requests-api.ts
+│   │       │   │   ├── hooks/
+│   │       │   │   │   ├── use-requests-list.ts
+│   │       │   │   │   ├── use-request-details.ts
+│   │       │   │   │   └── use-request-create.ts
 │   │       │   │   └── model/
 │   │       │   │       └── request.types.ts
 │   │       │   ├── content/
@@ -727,30 +1243,84 @@ terra-conecta/
 │   │       │   │   ├── components/
 │   │       │   │   │   ├── content-grid.tsx
 │   │       │   │   │   ├── content-filters.tsx
-│   │       │   │   │   └── content-form.tsx
+│   │       │   │   │   ├── content-form.tsx
+│   │       │   │   │   └── content-status-badge.tsx
 │   │       │   │   ├── services/
 │   │       │   │   │   └── content-api.ts
 │   │       │   │   └── model/
 │   │       │   │       └── content.types.ts
+│   │       │   ├── history/
+│   │       │   │   ├── pages/
+│   │       │   │   │   └── history-page.tsx
+│   │       │   │   ├── components/
+│   │       │   │   │   ├── history-timeline.tsx
+│   │       │   │   │   └── history-filters.tsx
+│   │       │   │   ├── services/
+│   │       │   │   │   └── history-api.ts
+│   │       │   │   └── model/
+│   │       │   │       └── history.types.ts
+│   │       │   ├── admin/
+│   │       │   │   ├── pages/
+│   │       │   │   │   └── admin-settings-page.tsx
+│   │       │   │   ├── components/
+│   │       │   │   │   ├── permissions-panel.tsx
+│   │       │   │   │   └── prototype-params-form.tsx
+│   │       │   │   ├── services/
+│   │       │   │   │   └── admin-api.ts
+│   │       │   │   └── model/
+│   │       │   │       └── admin.types.ts
 │   │       │   └── shared/
 │   │       │       ├── components/
 │   │       │       │   ├── page-header.tsx
 │   │       │       │   ├── data-table.tsx
 │   │       │       │   ├── empty-state.tsx
+│   │       │       │   ├── loading-state.tsx
+│   │       │       │   ├── error-state.tsx
 │   │       │       │   ├── app-sidebar.tsx
-│   │       │       │   └── app-topbar.tsx
+│   │       │       │   ├── app-topbar.tsx
+│   │       │       │   ├── status-badge.tsx
+│   │       │       │   ├── metric-card.tsx
+│   │       │       │   ├── search-input.tsx
+│   │       │       │   └── confirm-dialog.tsx
 │   │       │       ├── hooks/
 │   │       │       │   ├── use-pagination.ts
-│   │       │       │   └── use-debounce.ts
+│   │       │       │   ├── use-debounce.ts
+│   │       │       │   ├── use-query-params.ts
+│   │       │       │   └── use-modal.ts
 │   │       │       ├── utils/
 │   │       │       │   ├── format-date.ts
-│   │       │       │   └── format-status.ts
+│   │       │       │   ├── format-status.ts
+│   │       │       │   ├── format-currency.ts
+│   │       │       │   └── build-query-string.ts
+│   │       │       ├── constants/
+│   │       │       │   ├── roles.ts
+│   │       │       │   ├── request-status.ts
+│   │       │       │   └── content-status.ts
 │   │       │       └── styles/
 │   │       │           ├── tokens.ts
-│   │       │           └── theme.css
+│   │       │           ├── theme.css
+│   │       │           └── globals.css
 │   │       ├── assets/
 │   │       │   ├── icons/
-│   │       │   └── images/
+│   │       │   ├── images/
+│   │       │   └── illustrations/
+│   │       ├── lib/
+│   │       │   ├── http-client.ts
+│   │       │   ├── query-client.ts
+│   │       │   └── zod-error-map.ts
+│   │       ├── mocks/
+│   │       │   ├── browser.ts
+│   │       │   ├── handlers/
+│   │       │   │   ├── auth.handlers.ts
+│   │       │   │   ├── users.handlers.ts
+│   │       │   │   ├── requests.handlers.ts
+│   │       │   │   ├── content.handlers.ts
+│   │       │   │   └── dashboard.handlers.ts
+│   │       │   └── data/
+│   │       │       ├── users.mock.ts
+│   │       │       ├── requests.mock.ts
+│   │       │       ├── content.mock.ts
+│   │       │       └── dashboard.mock.ts
 │   │       ├── main.tsx
 │   │       └── vite-env.d.ts
 │   ├── api/
@@ -760,17 +1330,29 @@ terra-conecta/
 │   │       ├── shared/
 │   │       │   ├── config/
 │   │       │   │   ├── env.ts
-│   │       │   │   └── app-config.ts
+│   │       │   │   ├── app-config.ts
+│   │       │   │   └── swagger.config.ts
 │   │       │   ├── http/
 │   │       │   │   ├── api-response.ts
-│   │       │   │   └── exception-filter.ts
+│   │       │   │   ├── exception-filter.ts
+│   │       │   │   ├── validation.pipe.ts
+│   │       │   │   └── request-context.interceptor.ts
 │   │       │   ├── auth/
 │   │       │   │   ├── auth.guard.ts
-│   │       │   │   └── current-user.ts
+│   │       │   │   ├── current-user.ts
+│   │       │   │   └── jwt.strategy.ts
 │   │       │   ├── logger/
 │   │       │   │   └── logger.service.ts
+│   │       │   ├── database/
+│   │       │   │   ├── prisma.service.ts
+│   │       │   │   └── prisma.module.ts
+│   │       │   ├── storage/
+│   │       │   │   ├── storage.module.ts
+│   │       │   │   └── storage.service.ts
 │   │       │   └── utils/
-│   │       │       └── date.util.ts
+│   │       │       ├── date.util.ts
+│   │       │       ├── pagination.util.ts
+│   │       │       └── slug.util.ts
 │   │       ├── modules/
 │   │       │   ├── auth/
 │   │       │   │   ├── auth.module.ts
@@ -786,7 +1368,8 @@ terra-conecta/
 │   │       │   │   │   ├── users.service.ts
 │   │       │   │   │   └── users.dao.ts
 │   │       │   │   └── model/
-│   │       │   │       └── users.contracts.ts
+│   │       │   │       ├── users.contracts.ts
+│   │       │   │       └── users.rules.ts
 │   │       │   ├── requests/
 │   │       │   │   ├── requests.module.ts
 │   │       │   │   ├── infra/
@@ -794,7 +1377,8 @@ terra-conecta/
 │   │       │   │   │   ├── requests.service.ts
 │   │       │   │   │   └── requests.dao.ts
 │   │       │   │   └── model/
-│   │       │   │       └── requests.contracts.ts
+│   │       │   │       ├── requests.contracts.ts
+│   │       │   │       └── requests.rules.ts
 │   │       │   ├── content/
 │   │       │   │   ├── content.module.ts
 │   │       │   │   ├── infra/
@@ -802,467 +1386,503 @@ terra-conecta/
 │   │       │   │   │   ├── content.service.ts
 │   │       │   │   │   └── content.dao.ts
 │   │       │   │   └── model/
-│   │       │   │       └── content.contracts.ts
+│   │       │   │       ├── content.contracts.ts
+│   │       │   │       └── content.rules.ts
 │   │       │   ├── media/
 │   │       │   │   ├── media.module.ts
 │   │       │   │   ├── infra/
 │   │       │   │   │   ├── media.controller.ts
 │   │       │   │   │   ├── media.service.ts
-│   │       │   │   │   └── media.storage.ts
+│   │       │   │   │   └── media.dao.ts
 │   │       │   │   └── model/
-│   │       │   │       └── media.contracts.ts
-│   │       │   └── dashboard/
-│   │       │       ├── dashboard.module.ts
+│   │       │   │       ├── media.contracts.ts
+│   │       │   │       └── media.rules.ts
+│   │       │   ├── dashboard/
+│   │       │   │   ├── dashboard.module.ts
+│   │       │   │   ├── infra/
+│   │       │   │   │   ├── dashboard.controller.ts
+│   │       │   │   │   └── dashboard.service.ts
+│   │       │   │   └── model/
+│   │       │   │       └── dashboard.contracts.ts
+│   │       │   ├── history/
+│   │       │   │   ├── history.module.ts
+│   │       │   │   ├── infra/
+│   │       │   │   │   ├── history.controller.ts
+│   │       │   │   │   ├── history.service.ts
+│   │       │   │   │   └── history.dao.ts
+│   │       │   │   └── model/
+│   │       │   │       └── history.contracts.ts
+│   │       │   └── admin/
+│   │       │       ├── admin.module.ts
 │   │       │       ├── infra/
-│   │       │       │   ├── dashboard.controller.ts
-│   │       │       │   └── dashboard.service.ts
+│   │       │       │   ├── admin.controller.ts
+│   │       │       │   ├── admin.service.ts
+│   │       │       │   └── admin.dao.ts
 │   │       │       └── model/
-│   │       │           └── dashboard.contracts.ts
-│   │       └── database/
-│   │           ├── schema.sql
-│   │           └── seed.ts
+│   │       │           └── admin.contracts.ts
+│   │       ├── database/
+│   │       │   ├── prisma/
+│   │       │   │   ├── schema.prisma
+│   │       │   │   ├── migrations/
+│   │       │   │   └── seed.ts
+│   │       │   └── fixtures/
+│   │       │       ├── users.fixture.ts
+│   │       │       ├── requests.fixture.ts
+│   │       │       └── content.fixture.ts
+│   │       └── test/
+│   │           ├── e2e/
+│   │           │   ├── auth.e2e-spec.ts
+│   │           │   ├── users.e2e-spec.ts
+│   │           │   └── requests.e2e-spec.ts
+│   │           └── setup/
+│   │               └── test-app.ts
 │   └── mobile/
 │       └── lib/
 │           ├── app/
+│           │   ├── router/
+│           │   └── theme/
 │           ├── modules/
 │           ├── shared/
 │           └── main.dart
+├── packages/
+│   ├── config-eslint/
+│   ├── config-typescript/
+│   ├── design-tokens/
+│   └── shared-contracts/
 ├── docs/
 │   ├── architecture/
 │   │   ├── overview.md
 │   │   ├── frontend-guidelines.md
+│   │   ├── backend-guidelines.md
+│   │   ├── module-boundaries.md
 │   │   └── api-contracts.md
 │   ├── execution/
 │   │   ├── 15-day-plan.md
-│   │   └── checklist.md
+│   │   ├── checklist.md
+│   │   ├── release-plan.md
+│   │   └── demo-script.md
 │   └── product/
-│       └── prototype-scope.md
+│       ├── prototype-scope.md
+│       ├── journeys.md
+│       └── business-rules.md
+├── .github/
+│   └── workflows/
+│       ├── ci.yml
+│       ├── web-preview.yml
+│       └── api-check.yml
 ├── package.json
 ├── pnpm-workspace.yaml
 ├── turbo.json
-├── README.md
-└── .env.example
+├── tsconfig.base.json
+├── .env.example
+├── .editorconfig
+├── .gitignore
+├── .prettierrc
+├── .eslintrc.cjs
+├── commitlint.config.cjs
+└── README.md
 ```
 
-## Leitura da tree view
+## Leitura arquitetural da tree view
 
-- `apps/web` concentra a entrega principal do protótipo;
-- `apps/api` sustenta fluxos e contratos com responsabilidade controlada;
-- `apps/mobile` existe como continuidade estrutural, não como foco de entrega;
-- `docs` registra decisões, contratos e execução;
-- a modularidade está presente, mas sem multiplicação desnecessária de camadas.
+- `apps/web` concentra a entrega principal;
+- `apps/api` sustenta domínio, contratos e persistência;
+- `apps/mobile` é continuidade estrutural;
+- `packages` evita duplicação real, não abstração ornamental;
+- `docs` preserva continuidade de produto e arquitetura;
+- `shared` é estritamente transversal e pequeno.
 
 ---
 
-# 13. Organização de Responsabilidades por Camada
+# 16. Organização de Responsabilidades por Camada
 
 ## Frontend Web
 Responsável por:
-- experiência de uso;
 - navegação;
-- estados de tela;
+- experiência de uso;
 - formulários;
-- componentes compartilhados;
-- apresentação de dados;
-- coerência visual;
-- feedback operacional ao usuário.
+- componentes;
+- estados visuais;
+- apresentação e composição de dados;
+- feedback ao usuário.
 
 ## Backend API
 Responsável por:
 - contratos HTTP;
-- validações de entrada;
-- regras centrais mínimas;
-- persistência seletiva;
-- agregação de dados para o frontend;
-- proteção de rotas e sessão básica.
+- autenticação;
+- validação de entrada;
+- orquestração mínima dos casos de uso;
+- agregação de dados;
+- persistência seletiva.
 
 ## DAO / Persistência
 Responsável apenas por:
-- leitura e escrita de dados;
-- consultas simples e previsíveis;
-- nenhuma decisão de fluxo de negócio complexa.
+- leitura;
+- escrita;
+- consultas;
+- mapeamento para banco.
 
-## Shared
+Não deve:
+- decidir fluxo de negócio;
+- conhecer regras de UI;
+- assumir orquestração complexa.
+
+## Shared / Pacotes compartilhados
 Responsável apenas por:
-- utilidades genuinamente reutilizáveis;
+- contratos genuinamente reutilizados;
+- design tokens;
 - configurações comuns;
-- estrutura transversal mínima.
-
-> [!IMPORTANT]
-> O critério de separação não é “deixar bonito”. É impedir mistura indevida de responsabilidade e manter o fluxo visível.
+- regras transversais reais.
 
 ---
 
-# 14. Requisitos Funcionais
+# 17. Matriz de Requisitos Funcionais
 
-## Requisitos principais
-
-- autenticação de usuários internos;
-- acesso a dashboard com visão resumida da operação;
-- cadastro, edição, listagem e detalhamento de usuárias;
-- abertura de solicitações com campos essenciais;
-- atualização de status operacional;
-- upload e listagem de anexos vinculados;
-- consulta de histórico por usuária;
-- gestão de conteúdo institucional;
-- filtros de busca em módulos principais;
-- visualização de indicadores básicos;
-- segregação mínima por perfil;
-- rastreabilidade de interações relevantes.
-
-## Requisitos complementares
-
-- estados visuais consistentes de carregamento, vazio e erro;
-- feedback de sucesso e falha em ações críticas;
-- ordenação básica em tabelas;
-- paginação simples quando aplicável;
-- componentes reutilizáveis para acelerar evolução futura.
-
-## Requisitos demonstrativos
-
-- jornada navegável fim a fim;
-- consistência visual entre módulos;
-- dados de demonstração coerentes;
-- capacidade de apresentação institucional sem dependência de fala explicativa constante.
+| ID | Requisito | Descrição técnica | Prioridade | Origem |
+|---|---|---|---|---|
+| RF-01 | Login institucional | Permitir autenticação de usuários internos com sessão válida | Alta | Acesso |
+| RF-02 | Proteção de rotas | Bloquear páginas internas sem sessão autenticada | Alta | Segurança |
+| RF-03 | Dashboard | Exibir visão resumida da operação com métricas e atalhos | Alta | Operação |
+| RF-04 | Listagem de usuárias | Permitir consulta com busca, filtros e navegação | Alta | Gestão |
+| RF-05 | Cadastro de usuária | Permitir criação de registro com campos essenciais | Alta | Gestão |
+| RF-06 | Edição de usuária | Permitir atualização de dados principais | Média | Gestão |
+| RF-07 | Perfil da usuária | Exibir dados consolidados, histórico e solicitações vinculadas | Alta | Gestão |
+| RF-08 | Criação de solicitação | Permitir abertura vinculada a usuária válida | Alta | Atendimento |
+| RF-09 | Detalhe da solicitação | Exibir status, categoria, timeline e anexos | Alta | Atendimento |
+| RF-10 | Atualização de status | Permitir evolução controlada do estado da solicitação | Alta | Atendimento |
+| RF-11 | Upload de mídia | Permitir envio de imagem, áudio e vídeo com metadados | Alta | Mídia |
+| RF-12 | Listagem de anexos | Exibir arquivos vinculados à solicitação | Alta | Mídia |
+| RF-13 | Biblioteca de conteúdo | Exibir materiais por categoria com filtro e detalhe | Média | Conteúdo |
+| RF-14 | Gestão de conteúdo | Permitir criar, editar e publicar material | Média | Conteúdo |
+| RF-15 | Histórico consolidado | Exibir eventos relevantes por usuária | Alta | Rastreabilidade |
+| RF-16 | Perfis mínimos | Distinguir acesso de leitura, operação e administração | Média | Administração |
+| RF-17 | Feedback visual | Informar sucesso, erro, loading e estados vazios | Alta | UX |
+| RF-18 | Dados demonstrativos coerentes | Popular o ambiente com cenários plausíveis para demo | Alta | Demonstração |
 
 ---
 
-# 15. Requisitos Não Funcionais
+# 18. Matriz de Requisitos Não Funcionais
 
-## Segurança
-- autenticação básica segura;
-- proteção de rotas internas;
-- validação de entrada no backend;
-- segregação mínima por perfil;
-- tratamento básico de sessão e logout.
-
-## Performance
-- carregamento rápido das telas principais;
-- resposta adequada em operações centrais;
-- upload funcional sem degradação severa;
-- renderização estável de tabelas e formulários.
-
-## Usabilidade
-- navegação clara;
-- baixa fricção na execução de tarefas;
-- hierarquia visual consistente;
-- textos objetivos;
-- responsividade adequada para desktop e tablet.
-
-## Manutenibilidade
-- módulos legíveis;
-- contratos explícitos;
-- separação limpa por domínio;
-- componentes reutilizáveis sem abstração excessiva.
-
-## Observabilidade
-- logs básicos do backend;
-- identificação de erros principais;
-- possibilidade de diagnóstico rápido durante demonstração.
-
-## Evolução controlada
-- capacidade de extensão por módulos;
-- reaproveitamento de contratos entre frontend e backend;
-- preparação para futura derivação mobile em Flutter.
-
-## Confiabilidade do protótipo
-- ambiente estável para apresentação;
-- dados previsíveis;
-- fluxos sem dependência de integrações frágeis;
-- fallback simples para cenários não implementados integralmente.
+| ID | Requisito | Descrição técnica | Critério mínimo |
+|---|---|---|---|
+| RNF-01 | Performance de navegação | Telas principais devem carregar com fluidez em ambiente de demo | Navegação sem travamento perceptível |
+| RNF-02 | Usabilidade | Fluxos devem ser claros, com baixa fricção operacional | Usuário consegue executar jornada principal sem instrução extensa |
+| RNF-03 | Manutenibilidade | Estrutura modular e responsabilidades claras | Localização rápida de arquivos e baixa ambiguidade |
+| RNF-04 | Consistência visual | Layout, componentes e estados devem seguir linguagem unificada | Aparência institucional e previsível |
+| RNF-05 | Segurança básica | Rotas protegidas, validação de entrada e sessão controlada | Sem acesso indevido às áreas internas |
+| RNF-06 | Observabilidade mínima | Logs suficientes para diagnosticar falhas centrais | Erro principal identificável durante homologação |
+| RNF-07 | Escalabilidade estrutural | Projeto deve crescer por módulos sem reestruturação total imediata | Inclusão de novos módulos sem ruptura |
+| RNF-08 | Confiabilidade demonstrativa | Demo não pode depender de integrações frágeis | Fluxo principal executável de ponta a ponta |
+| RNF-09 | Portabilidade de ambiente | Ambiente deve subir com previsibilidade em dev e staging | Setup documentado e replicável |
+| RNF-10 | Qualidade de código | Typecheck, lint e build devem permanecer íntegros | Pipeline local e CI verdes |
+| RNF-11 | Versionamento disciplinado | Código, releases e checkpoints devem ser rastreáveis | Branches, tags e PRs consistentes |
+| RNF-12 | Responsividade | Uso confortável em desktop e tablet | Layout sem quebra relevante |
 
 ---
 
-# 16. Regras de Negócio
+# 19. Matriz de Regras de Negócio
 
-## Regras centrais
+| ID | Regra | Descrição | Impacto |
+|---|---|---|---|
+| RN-01 | Usuária única | Cada usuária deve possuir identificação única no protótipo | Integridade cadastral |
+| RN-02 | Solicitação vinculada | Toda solicitação deve estar associada a uma usuária válida | Coerência operacional |
+| RN-03 | Anexo contextual | Não existe anexo solto; todo arquivo deve pertencer a uma solicitação | Rastreabilidade |
+| RN-04 | Status válido | Solicitações só podem assumir estados previstos no fluxo | Consistência de operação |
+| RN-05 | Histórico derivado | Eventos relevantes devem gerar item de histórico quando aplicável | Auditoria básica |
+| RN-06 | Conteúdo categorizado | Material institucional deve possuir categoria e estado | Organização da biblioteca |
+| RN-07 | Publicação controlada | Conteúdo só aparece publicamente no módulo se estiver publicado | Coerência de catálogo |
+| RN-08 | Administração restrita | Ações administrativas devem ser visíveis apenas a perfis adequados | Segurança básica |
+| RN-09 | Campos obrigatórios | Cadastro e edição devem validar os campos mínimos do domínio | Qualidade do dado |
+| RN-10 | Dados de demo coerentes | Dados mockados ou persistidos não podem contradizer a narrativa do sistema | Credibilidade da apresentação |
+| RN-11 | Timeline contextual | Histórico deve apresentar ordem compreensível para leitura humana | Clareza operacional |
+| RN-12 | Upload controlado | Tipos e tamanhos de arquivos aceitos devem seguir política mínima | Segurança e estabilidade |
 
-- cada usuária deve possuir identificação única no protótipo;
-- cada solicitação deve estar vinculada a uma usuária válida;
-- anexos devem sempre estar associados a uma solicitação;
-- status deve refletir o estado operacional exibido ao usuário interno;
-- conteúdo publicado deve respeitar categoria e estado de publicação;
-- ações relevantes devem aparecer no histórico quando aplicável.
+---
+
+# 20. Regras Operacionais Complementares
 
 ## Regras de fluxo
+- não criar solicitação sem usuária;
+- não anexar mídia sem solicitação;
+- não publicar conteúdo sem categoria;
+- não atualizar status para valor fora da máquina de estados simplificada;
+- não permitir acesso administrativo a perfis não autorizados.
 
-- não se cria solicitação sem usuária associada;
-- não se anexa mídia sem contexto de solicitação;
-- atualização de status precisa seguir lista de estados válidos;
-- cadastro e edição devem validar campos essenciais;
-- usuários sem perfil adequado não devem ver ações de administração.
+## Regras técnicas
+- rotas e contratos devem usar nomenclatura consistente;
+- DAOs não devem conter regra de negócio;
+- controllers não devem absorver fluxo de orquestração;
+- shared não deve virar depósito genérico;
+- packages compartilhados só entram quando houver reuso real.
 
-## Regras de protótipo
-
-- dados podem ser simplificados, mas não incoerentes;
-- telas podem omitir profundidade operacional que não comprometa a narrativa;
-- o backend não precisa refletir toda a operação real, mas deve sustentar a demonstração com consistência.
+## Regras de demonstração
+- sempre manter seed ou fixtures prontas;
+- evitar dependência de internet para fluxos principais, quando possível;
+- priorizar caminhos felizes estáveis;
+- deixar fallback visual para partes ainda simuladas.
 
 ---
 
-# 17. Plano Técnico e Estratégico de Execução em 15 Dias
-
-A execução será organizada para maximizar percepção de progresso, reduzir risco de integração tardia e concentrar esforço no que efetivamente compõe a experiência demonstrável.
+# 21. Plano Técnico e Estratégico de Execução em 15 Dias
 
 ## Estratégia geral
 
-- primeiros dias dedicados à fundação e design estrutural;
-- miolo do ciclo dedicado à construção das telas e fluxos centrais;
-- backend entra como suporte progressivo, sem travar interface;
-- últimos dias reservados para integração, refinamento, QA e demonstração.
+A execução será dividida em três blocos:
 
-## Cronograma executivo de 15 dias
+### Bloco 1 — Fundação
+Definir escopo, árvore, design base, convenções e setup.
 
-| Dia | Foco | Entrega esperada |
+### Bloco 2 — Construção principal
+Entregar telas, módulos e contratos que compõem o valor visível.
+
+### Bloco 3 — Integração e validação
+Conectar, estabilizar, validar e preparar a apresentação.
+
+## Cronograma executivo
+
+| Dia | Foco | Entrega |
 |---|---|---|
-| 1 | Kickoff técnico e consolidação do escopo | mapa de telas, módulos e árvore inicial |
-| 2 | Fundação do repositório e design base | shell do projeto, roteamento, tema e estrutura |
-| 3 | Layout institucional e autenticação | login, layout base, navegação principal |
-| 4 | Dashboard | cards, painel principal, widgets iniciais |
-| 5 | Gestão de usuárias | listagem, filtros, detalhe inicial |
-| 6 | Cadastro e edição de usuárias | formulários e estados visuais |
-| 7 | Solicitações | listagem, criação e detalhe inicial |
-| 8 | Histórico e timeline | vínculo entre usuária, solicitação e histórico |
-| 9 | Mídias e anexos | upload demonstrativo e listagem |
-| 10 | Conteúdo institucional | biblioteca, detalhe e gestão simples |
-| 11 | Backend de suporte | contratos, endpoints e persistência mínima |
-| 12 | Integração frontend-backend | conexão real dos fluxos centrais |
-| 13 | Refino visual e UX | ajustes, consistência, feedbacks e responsividade |
-| 14 | QA e homologação interna | testes de fluxo e correção de falhas |
-| 15 | Preparação de demo | estabilização final, dados de apresentação e roteiro |
-
-## Visão estratégica por blocos
-
-### Bloco 1 — Fundação (Dias 1 a 3)
-Objetivo: impedir improviso estrutural e garantir base visual coerente.
-
-### Bloco 2 — Construção central (Dias 4 a 10)
-Objetivo: entregar a maior parte do valor perceptível do protótipo.
-
-### Bloco 3 — Integração e validação (Dias 11 a 15)
-Objetivo: transformar conjunto de telas em produto demonstrável de ponta a ponta.
+| 1 | Kickoff técnico e escopo | mapa de telas, módulos e limites |
+| 2 | Fundação do monorepo | estrutura, lint, build, versionamento |
+| 3 | Base visual | layout, tema, sidebar, topbar |
+| 4 | Autenticação | login, sessão, proteção de rotas |
+| 5 | Dashboard | cards, indicadores, atalhos |
+| 6 | Usuárias I | listagem, filtros, detalhe |
+| 7 | Usuárias II | cadastro, edição, histórico |
+| 8 | Solicitações I | listagem, criação |
+| 9 | Solicitações II | detalhe, status, timeline |
+| 10 | Mídias e conteúdo | upload, biblioteca, publicação |
+| 11 | Backend mínimo | endpoints, contratos, persistência |
+| 12 | Integração | frontend + backend + seed |
+| 13 | Refino visual | UX, loading, feedbacks, ajustes |
+| 14 | QA e homologação | smoke tests, correções |
+| 15 | Demo | estabilização final e roteiro |
 
 ```mermaid
 %%{init: {
 'theme':'dark',
 'themeVariables':{
 'background':'#020617',
+'mainBkg':'#020617',
+'secondBkg':'#0f172a',
+'tertiaryColor':'#111827',
 'primaryColor':'#22d3ee',
 'primaryTextColor':'#f8fafc',
 'primaryBorderColor':'#39ff14',
-'lineColor':'#c084fc',
 'secondaryColor':'#0f172a',
-'tertiaryColor':'#111827'
+'secondaryTextColor':'#e2e8f0',
+'secondaryBorderColor':'#a855f7',
+'lineColor':'#22d3ee',
+'textColor':'#f8fafc',
+'clusterBkg':'#020617',
+'clusterBorder':'#a855f7',
+'defaultLinkColor':'#22d3ee'
 }}}%%
 gantt
 title Plano Técnico de Execução do Protótipo - 15 dias
 dateFormat  YYYY-MM-DD
 axisFormat  %d/%m
 section Fundação
-Escopo, arquitetura e setup           :a1, 2026-04-20, 3d
-section Frontend Principal
-Layout, dashboard e módulos centrais  :a2, after a1, 7d
-section Integração e Refinamento
-API, integração, QA e demo            :a3, after a2, 5d
+Escopo, setup e base visual           :a1, 2026-04-20, 3d
+section Construção Principal
+Módulos e experiência principal       :a2, after a1, 7d
+section Integração
+API, persistência e conexão           :a3, after a2, 2d
+section Qualidade
+QA, polish e estabilidade             :a4, after a3, 2d
+section Entrega
+Demo e fechamento                     :a5, after a4, 1d
 ```
 
 ---
 
-# 18. Passo a Passo de Montagem do Protótipo
+# 22. Passo a Passo de Montagem do Protótipo
 
-## Etapa 1 — Consolidar escopo real do protótipo
-Definir exatamente:
+## Etapa 1 — Congelar escopo real
+Definir:
 - telas obrigatórias;
-- fluxos obrigatórios;
-- dados mínimos necessários;
-- entidades principais;
-- fronteira entre real e simulado.
+- jornadas obrigatórias;
+- dados obrigatórios;
+- limites explícitos do que será mock e do que será persistido.
 
-**Saída esperada:** mapa funcional e navegação fechados.
+## Etapa 2 — Montar monorepo
+Criar:
+- `apps/web`
+- `apps/api`
+- `apps/mobile`
+- `packages`
+- `docs`
 
-## Etapa 2 — Criar base do repositório
-Montar monorepo simples com:
-- `apps/web`;
-- `apps/api`;
-- `apps/mobile` como continuidade estrutural;
-- `docs` com decisões iniciais.
+## Etapa 3 — Definir convenções
+Estabelecer:
+- naming;
+- structure;
+- commit pattern;
+- padrão de PR;
+- scripts de lint, typecheck e build.
 
-**Saída esperada:** projeto inicial executável.
-
-## Etapa 3 — Estruturar frontend base
+## Etapa 4 — Subir frontend base
 Implementar:
-- roteamento;
+- router;
 - layouts;
+- design tokens;
 - sidebar;
 - topbar;
-- tema visual;
-- componentes compartilhados;
-- estados globais mínimos.
+- estados visuais globais.
 
-**Saída esperada:** casca navegável do sistema.
-
-## Etapa 4 — Implementar autenticação de protótipo
-Construir:
-- login;
-- proteção de rotas;
-- sessão local ou integrada;
-- perfil básico autenticado.
-
-**Saída esperada:** acesso controlado ao ambiente interno.
-
-## Etapa 5 — Construir dashboard
+## Etapa 5 — Construir auth
 Implementar:
-- KPIs principais;
-- blocos de resumo;
-- lista de atividade recente;
-- atalhos de navegação.
+- login;
+- sessão;
+- proteção de rotas;
+- perfil autenticado.
 
-**Saída esperada:** tela inicial forte para demonstração.
+## Etapa 6 — Construir dashboard
+Implementar:
+- KPIs;
+- atalhos;
+- painéis;
+- atividade recente.
 
-## Etapa 6 — Construir módulo de usuárias
+## Etapa 7 — Construir módulo de usuárias
+Implementar:
+- tabela;
+- filtros;
+- cadastro;
+- edição;
+- perfil;
+- histórico.
+
+## Etapa 8 — Construir módulo de solicitações
 Implementar:
 - listagem;
-- filtros;
-- detalhe;
-- formulário de cadastro e edição;
-- histórico vinculado.
-
-**Saída esperada:** módulo navegável com percepção de operação real.
-
-## Etapa 7 — Construir módulo de solicitações
-Implementar:
-- tabela de solicitações;
 - criação;
 - detalhe;
 - status;
 - timeline.
 
-**Saída esperada:** fluxo operacional central demonstrável.
-
-## Etapa 8 — Construir upload de mídia
+## Etapa 9 — Construir mídias e conteúdo
 Implementar:
-- seletor de arquivo;
-- submissão;
+- upload;
 - metadados;
-- listagem por solicitação;
-- feedback visual.
-
-**Saída esperada:** demonstração de vínculo entre operação e anexos.
-
-## Etapa 9 — Construir módulo de conteúdo
-Implementar:
+- listagem de anexos;
 - biblioteca;
-- filtros;
-- detalhe;
-- cadastro simples;
-- publicação.
+- publicação simples.
 
-**Saída esperada:** narrativa institucional mais rica.
-
-## Etapa 10 — Construir backend mínimo
+## Etapa 10 — Subir backend mínimo
 Implementar:
 - contratos;
-- endpoints principais;
-- persistência controlada;
-- mocks coerentes quando necessário;
-- seed de dados.
+- controllers;
+- services;
+- DAOs;
+- persistência e seed.
 
-**Saída esperada:** frontend conectado sem dependência de gambiarra difusa.
-
-## Etapa 11 — Integrar frontend e backend
+## Etapa 11 — Integrar ponta a ponta
 Conectar:
-- autenticação;
+- auth;
 - dashboard;
 - usuárias;
 - solicitações;
 - conteúdo;
 - mídias.
 
-**Saída esperada:** protótipo executável ponta a ponta.
-
-## Etapa 12 — Refinar UX e estabilidade
+## Etapa 12 — Refino
 Ajustar:
 - loading;
-- estados vazios;
-- mensagens de erro;
-- consistência visual;
-- responsividade principal;
-- dados de demonstração.
+- erros;
+- vazios;
+- visual;
+- responsividade.
 
-**Saída esperada:** produto apresentável.
-
-## Etapa 13 — Testar, corrigir e preparar demo
+## Etapa 13 — Homologar e preparar demo
 Executar:
 - smoke tests;
-- revisão visual;
-- checagem de navegação;
-- roteiro de apresentação;
-- ambiente de demonstração.
-
-**Saída esperada:** entrega final estável e convincente.
+- checklist de apresentação;
+- revisão de dados;
+- roteiro final.
 
 ---
 
-# 19. Estratégia de Qualidade e Homologação
+# 23. Estratégia de Qualidade e Homologação
 
 ## Princípios
 
-- testar primeiro o que aparece e o que sustenta a narrativa principal;
-- não dispersar esforço em bordas pouco relevantes ao protótipo;
-- homologar fluxo, não apenas tela isolada;
-- validar coerência visual e consistência de dados.
+- homologar fluxo completo, não apenas tela;
+- validar o que sustenta a narrativa principal;
+- manter a demo previsível;
+- evitar dependência em bordas pouco relevantes.
 
-## Tipos de validação
+## Camadas de validação
 
-- teste de navegação principal;
-- teste de login e acesso;
-- teste de formulários críticos;
-- teste de listagem e filtros;
-- teste de detalhe e histórico;
-- teste de upload demonstrativo;
-- teste de integração dos endpoints principais;
-- teste de apresentação assistida.
+### Visual
+- layout;
+- alinhamento;
+- consistência de componentes;
+- tema;
+- responsividade.
+
+### Funcional
+- login;
+- dashboard;
+- gestão de usuárias;
+- solicitação;
+- upload;
+- conteúdo.
+
+### Técnica
+- build;
+- lint;
+- typecheck;
+- endpoints;
+- persistência;
+- logs.
+
+### Demonstrativa
+- cenários de seed;
+- caminhos felizes;
+- narrativa de apresentação;
+- fallback para partes simuladas.
 
 ## Critérios mínimos de homologação
 
-- sistema sobe localmente ou em ambiente de demo com previsibilidade;
-- todas as telas principais estão navegáveis;
-- fluxos centrais não quebram em apresentação;
-- dados estão consistentes com a narrativa do produto;
-- linguagem visual transmite maturidade suficiente.
+- aplicação sobe sem erro;
+- rotas principais navegáveis;
+- módulos centrais executáveis;
+- dados coerentes;
+- visual maduro o suficiente para demo institucional;
+- nenhum ponto crítico depende de improviso em apresentação.
 
 ---
 
-# 20. Deploy, Operação e Sustentação do Protótipo
+# 24. Deploy, Operação e Sustentação do Protótipo
 
 ## Ambientes sugeridos
 - desenvolvimento local;
 - staging de demonstração;
-- opcionalmente produção leve apenas para apresentação.
+- produção leve opcional para apresentação.
 
-## Deploy do frontend
+## Frontend
 - build versionado;
-- publicação em ambiente web simples;
-- variáveis de ambiente controladas;
-- assets estáticos organizados.
+- publicação em host estático ou plataforma simples;
+- variáveis por ambiente;
+- assets organizados.
 
-## Deploy do backend
+## Backend
 - serviço único;
-- configuração de ambiente mínima;
+- configuração de ambiente controlada;
 - logs básicos;
-- banco simples e seed inicial.
+- seed pronta;
+- banco previsível.
 
-## Sustentação do protótipo
-- correções rápidas de apresentação;
-- revisão de dados de demonstração;
-- ajustes de UI pós-homologação;
-- preparação para próxima onda de execução, se aprovada.
+## Operação
+- checklist de subida do ambiente;
+- dataset de demonstração controlado;
+- reset simples de base se necessário;
+- roteiro de fallback em caso de inconsistência.
 
 ---
 
-# 21. Matriz de Estimativa de Custo
-
-A matriz abaixo representa uma composição de investimento para entrega do protótipo com padrão técnico elevado, foco forte em frontend, documentação, integração mínima correta e janela de execução intensiva.
+# 25. Matriz de Estimativa de Custo
 
 | Frente | Peso estimado | Faixa de esforço | Valor estimado |
 |---|---:|---:|---:|
@@ -1275,16 +1895,9 @@ A matriz abaixo representa uma composição de investimento para entrega do prot
 | Documentação técnica e handoff | 6% | consolidação de continuidade | R$ 3.600 |
 | **Total estimado** | **100%** |  | **R$ 60.000** |
 
-## Leitura executiva da matriz
-
-- o maior peso está corretamente concentrado em frontend;
-- backend recebe investimento proporcional ao seu papel de sustentação;
-- design, refinamento e demonstração possuem peso relevante porque o protótipo será avaliado principalmente por experiência percebida e clareza visual;
-- documentação entra como mecanismo de continuidade técnica e proteção contra retrabalho.
-
 ---
 
-# 22. Investimento Comercial
+# 26. Investimento Comercial
 
 # 💎 Investimento Total Proposto: **R$ 60.000,00**
 
@@ -1299,77 +1912,82 @@ A matriz abaixo representa uma composição de investimento para entrega do prot
 
 ## O que o investimento cobre
 
-- consolidação técnica do protótipo;
-- estruturação arquitetural pragmática;
-- construção de frontend web com foco demonstrativo;
-- backend mínimo funcional em TypeScript;
-- contratos, organização de módulos e base de evolução;
-- documentação técnica;
-- refinamento final para apresentação.
+- arquitetura pragmática do protótipo;
+- construção de frontend demonstrável;
+- backend mínimo funcional;
+- contratos;
+- organização modular;
+- versionamento disciplinado;
+- documentação de continuidade;
+- preparação final para demo.
 
 ## O que não está incluído
 
-- expansão para produto completo;
-- operação contínua mensal longa;
+- plataforma enterprise completa;
+- operação contínua longa;
 - integrações extensas não previstas;
-- escopo adicional fora do protótipo acordado;
-- evolução mobile completa em Flutter nesta janela.
+- mobile completo em Flutter;
+- escopo adicional fora do protótipo acordado.
 
 ---
 
-# 23. Riscos e Mitigações
+# 27. Riscos e Mitigações
 
 | Risco | Probabilidade | Impacto | Nível | Mitigação |
 |---|---|---|---|---|
-| Crescimento de escopo | Alta | Alto | Crítico | congelar telas e fluxos obrigatórios até o Dia 2 |
-| Excesso de backend para um protótipo | Média | Alto | Alto | manter backend como suporte e revisar escopo diariamente |
-| Refinamento visual insuficiente | Média | Alto | Alto | reservar janela explícita de polish nos dias finais |
-| Integração tardia | Média | Alto | Alto | integrar módulos progressivamente, não apenas no fim |
-| Dados incoerentes na demo | Média | Médio | Moderado | preparar seeds e cenários de apresentação |
-| Complexidade estrutural desnecessária | Média | Médio | Moderado | revisar árvore e camadas com critério anti-superengenharia |
-| Baixa previsibilidade em 15 dias | Média | Alto | Alto | quebrar execução por entregas diárias e validar escopo cedo |
+| Crescimento de escopo | Alta | Alto | Crítico | congelar escopo até o Dia 2 |
+| Excesso de backend | Média | Alto | Alto | proteger arquitetura do protótipo contra inflar serviço e persistência |
+| Refino visual insuficiente | Média | Alto | Alto | reservar polish real nos dias finais |
+| Integração tardia | Média | Alto | Alto | conectar progressivamente e não apenas ao final |
+| Dados incoerentes | Média | Médio | Moderado | preparar seeds e fixtures desde cedo |
+| Tree view inflada | Média | Médio | Moderado | revisar shared, packages e módulos com critério |
+| Falta de disciplina em versionamento | Média | Médio | Moderado | definir branches, releases e PR pattern no início |
 
 > [!IMPORTANT]
-> Em protótipos curtos, o risco dominante não é falta de tecnologia. É falta de disciplina de escopo combinada com excesso de ambição estrutural.
+> O maior risco do protótipo não é falta de tecnologia. É perder foco por excesso de ambição estrutural.
 
 ---
 
-# 24. Critérios de Sucesso
+# 28. Critérios de Sucesso
 
-O protótipo será considerado bem-sucedido se, ao final do ciclo, existir:
+O protótipo será considerado bem-sucedido se existir ao final:
 
-- navegação completa entre módulos principais;
-- dashboard institucional coerente;
+- jornada de login até operação principal;
+- dashboard coerente;
 - gestão de usuárias funcional;
-- fluxo de solicitações demonstrável;
-- histórico e mídias integrados de forma crível;
-- conteúdo institucional navegável;
-- base técnica organizada e legível;
-- documentação suficiente para continuidade.
+- solicitações demonstráveis;
+- upload e mídias funcionando;
+- histórico crível;
+- biblioteca institucional navegável;
+- backend suficientemente estável;
+- organização técnica legível;
+- versionamento e documentação que permitam continuidade.
 
-## Indicadores qualitativos de sucesso
+## Indicadores qualitativos
 
-- boa percepção visual de produto real;
-- entendimento rápido da solução por quem assiste a demo;
-- baixo volume de improviso durante apresentação;
-- clareza estrutural do código;
-- facilidade de evolução para próxima fase.
+- produto “parece real”;
+- quem assiste entende rápido;
+- a demo flui sem improviso;
+- o código mostra ordem;
+- o próximo ciclo pode começar sem reconstrução total.
 
 ---
 
-# 25. Recomendações Finais
+# 29. Recomendações Finais
 
-O melhor caminho para este contexto é tratar o **Terra Conecta** como um **protótipo web de alta qualidade demonstrativa**, com rigor técnico suficiente para não colapsar na continuidade, mas sem transportar o peso de uma plataforma enterprise completa para dentro de uma janela de 15 dias.
+A melhor decisão para o **Terra Conecta** nesta etapa é construir um **protótipo web visualmente forte, tecnicamente enxuto e estruturalmente disciplinado**.
 
 ## Síntese de recomendação
 
-- manter o foco principal em frontend;
-- usar backend TypeScript como sustentação mínima correta;
-- preservar arquitetura monolítica modular;
-- evitar qualquer separação ornamental de camadas;
-- construir tree view limpa e previsível;
+- tratar frontend como centro do valor percebido;
+- manter backend pequeno, correto e legível;
+- usar monólito modular;
+- versionar com disciplina desde o início;
+- acelerar com bibliotecas maduras;
+- preservar tree view limpa;
+- detalhar regras, requisitos e contratos;
 - integrar cedo;
-- reservar tempo real para refinamento visual e demo.
+- reservar tempo real para polish e demo.
 
 > [!IMPORTANT]
-> O valor desta entrega não está em simular sofisticação técnica. Está em apresentar um protótipo forte, coerente, navegável, convincente e com base suficiente para virar produto sem reconstrução total.
+> O valor desta entrega não está em simular uma arquitetura enterprise completa. Está em apresentar um protótipo convincente, moderno, bem organizado, tecnicamente defensável e pronto para sustentar a próxima fase sem recomeço estrutural.
