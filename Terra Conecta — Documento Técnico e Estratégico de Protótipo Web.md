@@ -26,35 +26,37 @@
 
 # 📚 Sumário Executivo
 
-1. Visão do Protótipo  
-2. Objetivo Estratégico e Técnico  
-3. Premissas de Construção  
-4. Diretriz Visual Global dos Diagramas Mermaid  
-5. Escopo Executivo do Protótipo  
-6. Escopo Funcional do Protótipo  
-7. Fora de Escopo do Protótipo  
-8. Perfis de Usuário e Jornadas  
-9. Diretrizes Arquiteturais  
-10. Arquitetura Recomendada do Protótipo  
-11. Estratégia de Versionamento e Governança Técnica  
-12. Bibliotecas e Ferramentas Recomendadas  
-13. Diagramas Técnicos e Fluxos  
-14. Stack Tecnológica  
-15. Tree View Completa do Projeto  
-16. Organização de Responsabilidades por Camada  
-17. Matriz de Requisitos Funcionais  
-18. Matriz de Requisitos Não Funcionais  
-19. Matriz de Regras de Negócio  
-20. Regras Operacionais Complementares  
-21. Plano Técnico e Estratégico de Execução em 15 Dias  
-22. Passo a Passo de Montagem do Protótipo  
-23. Estratégia de Qualidade e Homologação  
-24. Deploy, Operação e Sustentação do Protótipo  
-25. Matriz de Estimativa de Custo  
-26. Investimento Comercial  
-27. Riscos e Mitigações  
-28. Critérios de Sucesso  
-29. Recomendações Finais
+# 📚 Sumário Navegável
+
+1. [Visão do Protótipo](#1-visão-do-protótipo)  
+2. [Objetivo Estratégico e Técnico](#2-objetivo-estratégico-e-técnico)  
+3. [Premissas de Construção](#3-premissas-de-construção)  
+4. [Diretriz Visual Global dos Diagramas Mermaid](#4-diretriz-visual-global-dos-diagramas-mermaid)  
+5. [Escopo Executivo do Protótipo](#5-escopo-executivo-do-protótipo)  
+6. [Escopo Funcional do Protótipo](#6-escopo-funcional-do-protótipo)  
+7. [Fora de Escopo do Protótipo](#7-fora-de-escopo-do-protótipo)  
+8. [Perfis de Usuário e Jornadas](#8-perfis-de-usuário-e-jornadas)  
+9. [Diretrizes Arquiteturais](#9-diretrizes-arquiteturais)  
+10. [Arquitetura Recomendada do Protótipo](#10-arquitetura-recomendada-do-protótipo)  
+11. [Estratégia de Versionamento e Governança Técnica](#11-estratégia-de-versionamento-e-governança-técnica)  
+12. [Bibliotecas e Ferramentas Recomendadas](#12-bibliotecas-e-ferramentas-recomendadas)  
+13. [Diagramas Técnicos e Fluxos](#13-diagramas-técnicos-e-fluxos)  
+14. [Stack Tecnológica](#14-stack-tecnológica)  
+15. [Tree View Completa do Projeto](#15-tree-view-completa-do-projeto)  
+16. [Organização de Responsabilidades por Camada](#16-organização-de-responsabilidades-por-camada)  
+17. [Matriz de Requisitos Funcionais](#17-matriz-de-requisitos-funcionais)  
+18. [Matriz de Requisitos Não Funcionais](#18-matriz-de-requisitos-não-funcionais)  
+19. [Matriz de Regras de Negócio](#19-matriz-de-regras-de-negócio)  
+20. [Regras Operacionais Complementares](#20-regras-operacionais-complementares)  
+21. [Plano Técnico e Estratégico de Execução em 15 Dias](#21-plano-técnico-e-estratégico-de-execução-em-15-dias)  
+22. [Passo a Passo de Montagem do Protótipo](#22-passo-a-passo-de-montagem-do-protótipo)  
+23. [Estratégia de Qualidade e Homologação](#23-estratégia-de-qualidade-e-homologação)  
+24. [Deploy, Operação e Sustentação do Protótipo](#24-deploy-operação-e-sustentação-do-protótipo)  
+25. [Matriz de Estimativa de Custo](#25-matriz-de-estimativa-de-custo)  
+26. [Investimento Comercial](#26-investimento-comercial)  
+27. [Riscos e Mitigações](#27-riscos-e-mitigações)  
+28. [Critérios de Sucesso](#28-critérios-de-sucesso)  
+29. [Recomendações Finais](#29-recomendações-finais)
 
 ---
 
